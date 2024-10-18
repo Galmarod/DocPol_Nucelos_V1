@@ -1,0 +1,12 @@
+24-10-12 21:30:03 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-12 21:30:03 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-12 21:30:03 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-12 21:30:03 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-12 21:30:03 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-12 21:30:03 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-12 21:30:03 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-12 21:30:03 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 77::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-12 21:30:03 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 84::El texto ha sido modificado y guardado en                                                           
+24-10-12 21:30:03 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 91::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-12 21:30:04 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-12 21:30:04 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::P2_1-temp.pdf completado                                                                            

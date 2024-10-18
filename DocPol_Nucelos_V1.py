@@ -5,7 +5,15 @@ Created on Thu Aug  1 10:51:46 2024
 
 @author: galmarod
 """
-
+__author__     = "Guillermo Almazán Rodríguez"
+__copyright__  = "Copyright 2024, RevelCode"
+__credits__    = ["galmarod"]
+__license__    = "GPL"
+__version__    = "1.0.1"
+__maintainer__ = "Francisco Javier Mendoza Bautista"
+__email__      = "javimenba.developer@gmail.com"
+__status__     = "Development"
+__date__       = "Oct-2024"
 #En este programa se pretende conjuntar todos los códigos para la generación de reportes pdf
 #automáticos del proyecto PABLO
 
@@ -14,7 +22,7 @@ import subprocess
 from PyPDF2 import PdfMerger
 
 dict_patos={'1':'Chikungunya',
-       '2':'COVID-19',
+    '2':'COVID-19',
        '3':'Dengue',
        '4':'Influenza_A',
        '5':'RSV'}

@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+__author__     = "Guillermo Almazán Rodríguez"
+__copyright__  = "Copyright 2024, RevelCode"
+__credits__    = ["galmarod"]
+__license__    = "GPL"
+__version__    = "1.0.1"
+__maintainer__ = "Francisco Javier Mendoza Bautista"
+__email__      = "javimenba.developer@gmail.com"
+__status__     = "Development"
+__date__       = "Oct-2024"
+
+
+
+import logging 
+import subprocess
+
+from lxml import etree as ET
+
+from common.gral import General
+from controller.control import Control
+from common.logs import Loger
+
+
+class ModifySvg(object):
+    def __init__(self):
+        Loger()
+        self.logger = logging.getLogger('bitacora')
+        self.gral = General() 
+        self.control = Control()
+        self.namespaces = {'svg': 'http://www.w3.org/2000/svg'}
+        
+    
+    def modify_svg_1(self, new_text):
+        tspan_id_text = 'tspan2'
+        #Definir los documentos de entrada (in) y salida (exp-temp.svg y exp-temp.pdf )
+        p1in  = self.gral.get_template_path("P1")
+        p1exp = self.gral.set_file_temp("P1-temp.svg")
+        p1pdf = self.gral.set_file_temp("P1-temp.pdf")
+        # Cargar el archivo SVG
+        tree = ET.parse(p1in)
+        root = tree.getroot()
+        # Encontrar el tspan Título con el id especificado utilizando los espacios de nombres
+        tspan_text = root.find(f".//svg:tspan[@id='{tspan_id_text}']", self.namespaces)
+        if tspan_text is not None:
+            # Modificar el texto del tspan
+            tspan_text.text = new_text
+        else:
+            self.logger.info("No se encontró el elemento tspan con id '{0}'.".
+                             format(tspan_id_text))
+        # Guardar los cambios en un nuevo archivo
+        tree.write(p1exp)
+        self.control.export_svg_to_pdf("P1-temp.svg","P1-temp.pdf")
+        self.logger.info("P1-temp.pdf completado")
+
+    def modify_svg_2_1(self,resumen, new_tittle1, new_text1):
+        #Definir los documentos de entrada (in) y salida (exp-temp.svg y exp-temp.pdf )
+        p1in  = self.gral.get_template_path("P2_1")
+        p1exp = self.gral.set_file_temp("P2_1-temp.svg")
+        p1pdf = self.gral.set_file_temp("P2_1-temp.pdf")
+        # Cargar el archivo SVG
+        tree = ET.parse(p1in)
+        root = tree.getroot()
+        # ID del tspan que quieres modificar
+        tspan_id_tittle1 = 'tspan50'
+        tspan_id_text1 = 'tspan51'
+        tspan_id_resumen = 'tspan4'
+        # Encontrar el tspan Título con el id especificado utilizando los espacios de nombres
+        tspan_tittle1 = root.find(f".//svg:tspan[@id='{tspan_id_tittle1}']", self.namespaces)
+        tspan_text1 = root.find(f".//svg:tspan[@id='{tspan_id_text1}']", self.namespaces)
+        tspan_resumen = root.find(f".//svg:tspan[@id='{tspan_id_resumen}']", self.namespaces)
+    
+        if tspan_resumen is not None:
+            # Modificar el texto del tspan
+            tspan_resumen.text = resumen
+            self.logger.info("El texto ha sido modificado y guardado en P2_1-temp.svg")
+        else:
+            self.logger.error("No se encontró el elemento tspan con id '{0}'".
+                              format(tspan_id_resumen))
+        if tspan_tittle1 is not None:
+            # Modificar el texto del tspan
+            tspan_tittle1.text = new_tittle1
+            self.logger.info("El texto ha sido modificado y guardado en ")
+        else:
+            self.logger.error("No se encontró el elemento tspan con id '{0}'".
+                              format(tspan_id_tittle1))
+        if tspan_text1 is not None:
+            # Modificar el texto del tspan
+            tspan_text1.text = new_text1
+            self.logger.info("El texto ha sido modificado y guardado en P2_1-temp.svg")
+        else:
+            self.logger.error("No se encontró el elemento tspan con id '{tspan_id_text1}'".
+                              format(tspan_id_text1))
+    
+        # Guardar los cambios en un nuevo archivo
+        tree.write(p1exp)
+        self.control.export_svg_to_pdf("P2_1-temp.svg","P2_1-temp.pdf")
+        self.logger.info("P2_1-temp.pdf completado")
+
