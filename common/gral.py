@@ -31,6 +31,13 @@ class General(object):
         templateFolder = os.path.join(self.main_path, 'plantillas')
         _template      = os.path.join(templateFolder, name)
         return _template
+
+    def get_image_path(self, name):
+        if not name.endswith(".png"):
+            name += ".png"
+        imageFolder = os.path.join(self.main_path, 'imagenes') 
+        _images     = os.path.join(imageFolder, name)
+        return _images
     
     def get_file_temp(self, name):
         tempFolder = os.path.join(self.main_path, 'temp')

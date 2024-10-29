@@ -29,7 +29,7 @@ class Control(object):
 
     def export_svg_to_pdf(self, svg_file, pdf_file):
         # Ruta de Inkscape en Windows con barra invertida doblemente escapada o usar una raw string
-        command = [r"C:\Program Files\Inkscape\bin\inkscape.exe", "--pipe", f"--export-filename={self.gral.get_file_temp(pdf_file)}"]    
+        command = ["inkscape", "--pipe", f"--export-filename={self.gral.get_file_temp(pdf_file)}"]    
         try:
             # Abrir el archivo SVG como binario y pasar su contenido a Inkscape
             with open(self.gral.get_file_temp(svg_file), 'rb') as svg_content:

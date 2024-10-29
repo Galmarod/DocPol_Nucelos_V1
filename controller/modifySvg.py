@@ -26,11 +26,11 @@ from common.logs import Loger
 class ModifySvg(object):
     def __init__(self):
         Loger()
-        self.logger = logging.getLogger('bitacora')
-        self.gral = General() 
-        self.control = Control()
+        self.logger     = logging.getLogger('bitacora')
+        self.gral       = General() 
+        self.control    = Control()
         self.namespaces = {'svg': 'http://www.w3.org/2000/svg'}
-        
+        self.textImege  = '{http://www.w3.org/1999/xlink}href' 
     
     def modify_svg_1(self, new_text):
         tspan_id_text = 'tspan2'
@@ -97,4 +97,132 @@ class ModifySvg(object):
         tree.write(p1exp)
         self.control.export_svg_to_pdf("P2_1-temp.svg","P2_1-temp.pdf")
         self.logger.info("P2_1-temp.pdf completado")
+     
 
+
+    def modify_svg_2_2(self,new_tittle1, new_text1, new_tittle2, new_text2):
+        #Definir los documentos de entrada (in) y salida (exp-temp.svg y exp-temp.pdf )
+        p1in = self.gral.get_template_path("P2_2.svg")
+        p1exp= self.gral.set_file_temp("P2_2-temp.svg")
+        p1pdf= self.gral.set_file_temp("P2_2-temp.pdf")
+        # Cargar el archivo SVG
+        tree = ET.parse(p1in)
+        root = tree.getroot()
+    
+        # Encontrar el tspan Título con el id especificado utilizando los espacios de nombres
+        #####################################################################################
+    
+        #Primera patología
+        tspan_id_tittle1 = 'tspan1'
+        tspan_id_text1 = 'tspan2'
+    
+        #Segunda patología
+        tspan_id_tittle2 = 'tspan3'
+        tspan_id_text2 = 'tspan4'
+    
+        #Primer texto y título
+        tspan_tittle1 = root.find(f".//svg:tspan[@id='{tspan_id_tittle1}']", self.namespaces)
+        tspan_text1   = root.find(f".//svg:tspan[@id='{tspan_id_text1}']",   self.namespaces)
+    
+        if tspan_tittle1 is not None:
+            # Modificar el texto del tspan
+            tspan_tittle1.text = new_tittle1
+            self.logger.info("El texto ha sido modificado y guardado en P2_2-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_tittle1}'")
+        if tspan_text1 is not None:
+            # Modificar el texto del tspan
+            tspan_text1.text = new_text1
+            self.logger.info("El texto ha sido modificado y guardado en P2_2-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_text2}'")
+    
+        #Segundo texto y título
+        tspan_tittle2 = root.find(f".//svg:tspan[@id='{tspan_id_tittle2}']", self.namespaces)
+        tspan_text2   = root.find(f".//svg:tspan[@id='{tspan_id_text2}']",   self.namespaces)
+    
+        if tspan_tittle2 is not None:
+            # Modificar el texto del tspan
+            tspan_tittle2.text = new_tittle2
+            self.logger.info("El texto ha sido modificado y guardado en P2_2-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_tittle2}'")
+        if tspan_text2 is not None:
+            # Modificar el texto del tspan
+            tspan_text2.text = new_text2
+            self.logger.info("El texto ha sido modificado y guardado en P2_2-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_text2}'")
+        # Guardar los cambios en un nuevo archivo
+        tree.write(p1exp)
+        self.control.export_svg_to_pdf("P2_2-temp.svg","P2_2-temp.pdf")
+        self.logger.info("P2_2-temp.pdf completado")
+
+
+    def modify_svg_3_1(self, new_tittle1, new_text1, new_text2, image):
+        #Definir los documentos de entrada (in) y salida (exp-temp.svg y exp-temp.pdf )
+        p1in = self.gral.get_template_path("P3_1")
+        p1exp= self.gral.set_file_temp("P3_1-temp.svg")
+        p1pdf= self.gral.set_file_temp("P3_1-temp.pdf")
+        #Última patología
+        tspan_id_tittle1 = 'tspan7'
+        tspan_id_text1 = 'tspan8'
+        
+        #Texto descriptivo e imagen
+        tspan_id_text2 = 'tspan9'
+        
+        # Cargar el archivo SVG
+        tree = ET.parse(p1in)
+        root = tree.getroot()
+
+        # Encontrar el tspan Título con el id especificado utilizando los espacios de nombres
+        tspan_tittle1 = root.find(f".//svg:tspan[@id='{tspan_id_tittle1}']", self.namespaces)
+        tspan_text1 = root.find(f".//svg:tspan[@id='{tspan_id_text1}']", self.namespaces)
+        if tspan_tittle1 is not None:
+            # Modificar el texto del tspan
+            tspan_tittle1.text = new_tittle1
+            self.logger.info("El texto ha sido modificado y guardado en P3_1-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_tittle1}'")
+        if tspan_text1 is not None:
+            # Modificar el texto del tspan
+            tspan_text1.text = new_text1
+            self.logger.info("El texto ha sido modificado y guardado en P3_1-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_text1}'")
+            
+        # Encontrar el tspan del texto de la imagen
+        tspan_text2 = root.find(f".//svg:tspan[@id='{tspan_id_text2}']", self.namespaces)
+    
+        if tspan_text2 is not None:
+            # Modificar el texto del tspan
+            tspan_text2.text = new_text2
+            self.logger.info("El texto ha sido modificado y guardado en P3_1-temp.svg")
+        else:
+            self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_text2}'")
+
+        # Encontrar el elemento que se desea reemplazar por la imagen PNG
+        element_id_tabla1 = 'rect3'
+        element = root.find(f".//svg:*[@id='{element_id_tabla1}']", self.namespaces)
+        
+        #Agregar imagen de Tabla 1
+        if element is not None:
+            # Crear el nuevo elemento de imagen
+            new_image = ET.Element(f"{{{self.namespaces['svg']}}}image", {
+                'x'            : element.attrib.get('x', '0'),
+                'y'            : element.attrib.get('y', '0'),
+                'width'        : element.attrib.get('width', '100'),
+                'height'       : element.attrib.get('height', '100'),
+                self.textImege : self.gral.get_image_path(image) # Asegúrate de poner la ruta correcta
+            })
+        
+            # Reemplazar el elemento original con el nuevo elemento de imagen
+            parent = element.getparent()
+            parent.replace(element, new_image)
+            self.logger.info("La imagen ha sido modificada en P3_1-temp.svg")
+        else:
+            self.logger.error(f"Elemento con id '{element_id_tabla1}' no encontrado.")
+        # Guardar los cambios en un nuevo archivo
+        tree.write(p1exp)
+        self.control.export_svg_to_pdf("P3_1-temp.svg","P3_1-temp.pdf")
+        self.logger.info("P3_1-temp.pdf completado")

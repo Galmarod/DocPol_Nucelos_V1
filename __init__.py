@@ -45,9 +45,11 @@ class Docpol:
         """self.logger.info("Path de la plantilla solicitada {0}"
                          .format(_template))"""
         #self.control.export_svg_to_pdf("P1-temp.svg", "P1-temp.pdf")
-        self.modifySvg.modify_svg_1("Docpol es lo mejor")
+        self.modifySvg.modify_svg_1("Docpol desde Archlinux")
         sentences = [lorem.sentence() for _ in range(4)]
         self.modifySvg.modify_svg_2_1("".join(sentences),"Javimenba","Docpol")
+        self.modifySvg.modify_svg_2_2("Test 1", "".join(sentences), "Test 2", "".join(sentences))
+        self.modifySvg.modify_svg_3_1("Test 1","Test 2","hola","alineamiento_plot")
 
 
 
