@@ -410,3 +410,362 @@
 24-10-29 00:41:59 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::222::La imagen ha sido modificada en P3_1-temp.svg                                                       
 24-10-29 00:42:00 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
 24-10-29 00:42:00 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::228::P3_1-temp.pdf completado                                                                            
+24-10-29 12:12:59 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-29 12:12:59 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-29 12:12:59 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-29 12:12:59 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-29 12:12:59 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-29 12:12:59 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 77::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 84::El texto ha sido modificado y guardado en                                                           
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 91::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::P2_1-temp.pdf completado                                                                            
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::130::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::136::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::147::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::153::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::159::P2_2-temp.pdf completado                                                                            
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::184::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::190::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::200::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::222::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-29 12:12:59 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-29 12:12:59 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::228::P3_1-temp.pdf completado                                                                            
+24-10-29 12:14:12 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-29 12:14:12 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-29 12:14:12 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-29 12:14:12 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-29 12:14:12 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-29 12:14:13 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 77::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 84::El texto ha sido modificado y guardado en                                                           
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 91::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::P2_1-temp.pdf completado                                                                            
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::130::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::136::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::147::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::153::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::159::P2_2-temp.pdf completado                                                                            
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::184::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::190::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::200::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::222::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-29 12:14:13 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::228::P3_1-temp.pdf completado                                                                            
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::254::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::260::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:14:13 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::284::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-29 12:14:31 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-29 12:14:31 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-29 12:14:31 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-29 12:14:31 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-29 12:14:31 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-29 12:14:31 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 77::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 84::El texto ha sido modificado y guardado en                                                           
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 91::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::P2_1-temp.pdf completado                                                                            
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::130::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::136::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::147::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::153::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::159::P2_2-temp.pdf completado                                                                            
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::184::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::190::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::200::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::222::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-29 12:14:31 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::228::P3_1-temp.pdf completado                                                                            
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::254::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::260::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:14:31 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::284::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-29 12:14:55 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-29 12:14:55 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-29 12:14:55 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-29 12:14:55 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-29 12:14:55 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-29 12:14:55 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-29 12:14:55 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-29 12:14:55 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 77::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:14:55 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 84::El texto ha sido modificado y guardado en                                                           
+24-10-29 12:14:55 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 91::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::P2_1-temp.pdf completado                                                                            
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::130::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::136::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::147::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::153::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::159::P2_2-temp.pdf completado                                                                            
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::184::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::190::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::200::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::222::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-29 12:14:56 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::228::P3_1-temp.pdf completado                                                                            
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::254::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::260::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::284::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-29 12:14:56 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::303::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-29 12:15:23 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-29 12:15:23 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-29 12:15:23 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-29 12:15:23 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-29 12:15:23 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-29 12:15:23 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-29 12:15:23 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-29 12:15:23 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 77::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:15:23 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 84::El texto ha sido modificado y guardado en                                                           
+24-10-29 12:15:23 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 91::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::P2_1-temp.pdf completado                                                                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::130::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::136::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::147::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::153::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::159::P2_2-temp.pdf completado                                                                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::184::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::190::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::200::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::222::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-29 12:15:24 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::228::P3_1-temp.pdf completado                                                                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::254::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::260::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::284::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::303::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-29 12:15:24 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-29 12:15:24 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::309::P3_2-temp.pdf completado                                                                            
+24-10-31 00:23:23 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:23:23 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:23:23 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:23:23 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:23:23 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:27:09 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:27:09 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:27:09 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:27:09 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:27:09 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:27:09 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::106::El texto ha sido modificado y guardado en                                                           
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::113::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::121::P2_1-temp.pdf completado                                                                            
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::150::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::156::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::167::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::173::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::179::P2_2-temp.pdf completado                                                                            
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::203::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::209::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::219::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:27:09 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::241::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-31 00:27:10 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::247::P3_1-temp.pdf completado                                                                            
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::271::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::277::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::301::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::320::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:27:10 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::326::P3_2-temp.pdf completado                                                                            
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::349::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::355::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::379::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:27:10 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::398::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:30:02 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:30:02 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:30:02 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:30:02 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:30:02 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:30:02 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::106::El texto ha sido modificado y guardado en                                                           
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::113::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::121::P2_1-temp.pdf completado                                                                            
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::150::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::156::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::167::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::173::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::179::P2_2-temp.pdf completado                                                                            
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::203::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::209::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::219::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::241::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-31 00:30:02 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::247::P3_1-temp.pdf completado                                                                            
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::271::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::277::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::301::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:30:02 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::320::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:30:03 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:30:03 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::326::P3_2-temp.pdf completado                                                                            
+24-10-31 00:30:03 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::349::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:30:03 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::355::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:30:03 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::379::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:30:03 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::398::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:30:03 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:30:18 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:30:18 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:30:18 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:30:18 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:30:18 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:30:18 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-31 00:30:18 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-31 00:30:18 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:30:18 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::106::El texto ha sido modificado y guardado en                                                           
+24-10-31 00:30:18 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::113::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::121::P2_1-temp.pdf completado                                                                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::150::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::156::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::167::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::173::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::179::P2_2-temp.pdf completado                                                                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::203::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::209::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::219::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::241::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-31 00:30:19 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::247::P3_1-temp.pdf completado                                                                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::271::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::277::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::301::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::320::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:30:19 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::326::P3_2-temp.pdf completado                                                                            
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::349::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::355::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::379::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:30:19 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::398::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:30:20 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:30:20 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::404::P3_3-temp.pdf completado                                                                            
+24-10-31 00:31:46 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:31:46 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:31:46 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:31:46 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:31:46 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:31:46 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::106::El texto ha sido modificado y guardado en                                                           
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::113::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::121::P2_1-temp.pdf completado                                                                            
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::150::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::156::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::167::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::173::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::179::P2_2-temp.pdf completado                                                                            
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::203::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::209::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::219::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::241::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-31 00:31:46 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::247::P3_1-temp.pdf completado                                                                            
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::271::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::277::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::301::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:31:46 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::320::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:31:47 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:31:47 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::326::P3_2-temp.pdf completado                                                                            
+24-10-31 00:31:47 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::349::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:31:47 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::355::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:31:47 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::379::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:31:47 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::398::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:31:47 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_3-temp.svg' exportado exitosamente a PDF como P3_3-temp.pdf.                            
+24-10-31 00:31:47 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::404::P3_3-temp.pdf completado                                                                            
+24-10-31 00:48:06 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:48:06 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:48:06 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:48:06 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:48:06 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:48:06 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::106::El texto ha sido modificado y guardado en                                                           
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::113::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::121::P2_1-temp.pdf completado                                                                            
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::150::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::156::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::167::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::173::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::179::P2_2-temp.pdf completado                                                                            
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::203::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::209::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::219::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:48:06 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::241::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-31 00:48:07 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::247::P3_1-temp.pdf completado                                                                            
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::271::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::277::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::301::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::320::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:48:07 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::326::P3_2-temp.pdf completado                                                                            
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::349::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::355::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::379::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::398::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:48:07 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_3-temp.svg' exportado exitosamente a PDF como P3_3-temp.pdf.                            
+24-10-31 00:48:07 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::404::P3_3-temp.pdf completado                                                                            
+24-10-31 00:48:24 - INFO  ::__init__.py              ::__init__       :: 35::=======================================                                                             
+24-10-31 00:48:24 - INFO  ::__init__.py              ::__init__       :: 36::=======================================                                                             
+24-10-31 00:48:24 - INFO  ::__init__.py              ::__init__       :: 37::      DOCPOL v.1.0.1                                                                                
+24-10-31 00:48:24 - INFO  ::__init__.py              ::__init__       :: 38::=======================================                                                             
+24-10-31 00:48:24 - INFO  ::__init__.py              ::__init__       :: 39::=======================================                                                             
+24-10-31 00:48:25 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P1-temp.svg' exportado exitosamente a PDF como P1-temp.pdf.                                
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_1   :: 55::P1-temp.pdf completado                                                                              
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_1 :: 99::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::106::El texto ha sido modificado y guardado en                                                           
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::113::El texto ha sido modificado y guardado en P2_1-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_1-temp.svg' exportado exitosamente a PDF como P2_1-temp.pdf.                            
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_1 ::121::P2_1-temp.pdf completado                                                                            
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::150::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::156::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::167::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::173::El texto ha sido modificado y guardado en P2_2-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P2_2-temp.svg' exportado exitosamente a PDF como P2_2-temp.pdf.                            
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_2_2 ::179::P2_2-temp.pdf completado                                                                            
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::203::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::209::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::219::El texto ha sido modificado y guardado en P3_1-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::241::La imagen ha sido modificada en P3_1-temp.svg                                                       
+24-10-31 00:48:25 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_1-temp.svg' exportado exitosamente a PDF como P3_1-temp.pdf.                            
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_1 ::247::P3_1-temp.pdf completado                                                                            
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::271::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::277::El texto ha sido modificado y guardado en P3_2-temp.svg                                             
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::301::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:48:25 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::320::La imagen ha sido modificada en P3_2-temp.svg                                                       
+24-10-31 00:48:26 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_2-temp.svg' exportado exitosamente a PDF como P3_2-temp.pdf.                            
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_3_2 ::326::P3_2-temp.pdf completado                                                                            
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::349::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::355::El texto ha sido modificado y guardado en P3_3-temp.svg                                             
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::379::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::398::La imagen ha sido modificada en P3_3-temp.svg                                                       
+24-10-31 00:48:26 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P3_3-temp.svg' exportado exitosamente a PDF como P3_3-temp.pdf.                            
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_3_3 ::404::P3_3-temp.pdf completado                                                                            
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_4_1 ::424::El texto ha sido modificado y guardado en P4_1-temp.svg                                             
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_4_1 ::448::La imagen ha sido modificada en P4_1-temp.svg                                                       
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_4_1 ::467::La imagen ha sido modificada en P4_1-temp.svg                                                       
+24-10-31 00:48:26 - INFO  ::control.py               ::export_svg_to_pdf:: 37::Archivo 'P4_1-temp.svg' exportado exitosamente a PDF como P4_1-temp.pdf.                            
+24-10-31 00:48:26 - INFO  ::modifySvg.py             ::modify_svg_4_1 ::473::P5_1-temp.pdf completado                                                                            
