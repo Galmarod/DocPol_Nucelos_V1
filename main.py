@@ -12,7 +12,7 @@ __status__     = "Development"
 __date__       = "Oct-2024"
 
 
-from common.gral import General  
+# from common.gral import General  
 from __init__ import Docpol  
 
 
