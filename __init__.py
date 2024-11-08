@@ -53,6 +53,9 @@ class Docpol:
         self.modifySvg.modify_svg_3_2("alineamiento_plot","image_prueba1")
         self.modifySvg.modify_svg_3_3("TEXTO 1", "TEXTO TABLA 2", "alineamiento_plot" , "image_prueba1")
         self.modifySvg.modify_svg_4_1("TEXTO FIGURA 1","image_prueba1","alineamiento_plot")
+        self.modifySvg.modify_svg_4_2("Texto photo 1","Texto photo 2","alineamiento_plot","image_prueba1")
+        self.modifySvg.modify_svg_4_3("Texto photo 1","Texto photo 2","alineamiento_plot","image_prueba1")
+        self.modifySvg.modify_svg_4_4("19","Texto photo 2","alineamiento_plot","image_prueba1")
 
 
 
