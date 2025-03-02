@@ -37,6 +37,7 @@ class ModifySvg(object):
         #Definir los documentos de entrada (in) y salida (exp-temp.svg y exp-temp.pdf )
         p1in  = self.gral.get_template_path("P1")
         p1exp = self.gral.set_file_temp("P1-temp.svg")
+        print(p1exp)
         p1pdf = self.gral.set_file_temp("P1-temp.pdf")
         # Cargar el archivo SVG
         tree = ET.parse(p1in)
@@ -51,7 +52,7 @@ class ModifySvg(object):
                              format(tspan_id_text))
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P1-temp.svg","P1-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P1-temp.pdf completado")
 
     def modify_svg_2(self, new_text):
@@ -73,7 +74,7 @@ class ModifySvg(object):
                              format(tspan_id_text))
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P1-temp.svg","P1-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P1-temp.pdf completado")
 
     def modify_svg_2_1(self,resumen, new_tittle1, new_text1):
@@ -117,7 +118,7 @@ class ModifySvg(object):
     
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P2_1-temp.svg","P2_1-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P2_1-temp.pdf completado")
      
     def modify_svg_2_2(self,new_tittle1, new_text1, new_tittle2, new_text2):
@@ -175,7 +176,7 @@ class ModifySvg(object):
             self.logger.error(f"No se encontró el elemento tspan con id '{tspan_id_text2}'")
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P2_2-temp.svg","P2_2-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P2_2-temp.pdf completado")
 
     def modify_svg_3_1(self, new_tittle1, new_text1, new_text2, image):
@@ -243,7 +244,7 @@ class ModifySvg(object):
             self.logger.error(f"Elemento con id '{element_id_tabla1}' no encontrado.")
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P3_1-temp.svg","P3_1-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P3_1-temp.pdf completado")
 
     def modify_svg_3_2(self, table, figure):
@@ -322,7 +323,7 @@ class ModifySvg(object):
             self.logger.error(f"Elemento con id '{element_id_figura1}' no encontrado.")
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P3_2-temp.svg","P3_2-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P3_2-temp.pdf completado")
 
     def modify_svg_3_3(self, new_text1, text_tabla2, figure1, figure2):
@@ -400,7 +401,7 @@ class ModifySvg(object):
             self.logger.error(f"Elemento con id '{element_id_figura1}' no encontrado.")
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P3_3-temp.svg", "P3_3-temp.pdf")
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P3_3-temp.pdf completado")
    
     def modify_svg_4_1(self, text_figura1, figure1, figure2):
@@ -469,7 +470,7 @@ class ModifySvg(object):
             self.logger.error(f"Elemento con id '{element_id_ampli}' no encontrado.")
         # Guardar los cambios en un nuevo archivo
         tree.write(p1exp)
-        self.control.export_svg_to_pdf("P4_1-temp.svg","P4_1-temp.pdf") 
+        self.control.export_svg_to_pdf(p1exp, p1pdf)
         self.logger.info("P5_1-temp.pdf completado")
 
     

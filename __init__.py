@@ -15,7 +15,7 @@ DOCPOL_VERSION = __version__
 
 
 from lorem_text import lorem
-
+import pyfiglet
 import logging  
 
 # Importar clases o funciones necesarias
@@ -32,9 +32,11 @@ class Docpol:
         self.modifySvg = ModifySvg() 
         # Configura el logger
         self.logger = logging.getLogger('bitacora')
+        docpol = pyfiglet.figlet_format("DOCPOL")
         self.logger.info('=======================================')
         self.logger.info('=======================================')
-        self.logger.info(f'      DOCPOL v.{DOCPOL_VERSION}')
+        self.logger.info(f'{docpol} v.{DOCPOL_VERSION}')
+        #self.logger.info(f'      DOCPOL v.{DOCPOL_VERSION}')
         self.logger.info('=======================================')
         self.logger.info('=======================================')
 
