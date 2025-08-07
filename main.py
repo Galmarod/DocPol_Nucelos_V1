@@ -12,14 +12,17 @@ __status__     = "Development"
 __date__       = "Oct-2024"
 
 
+import streamlit as st
+
 from common.gral import General  
 from __init__ import Docpol  
 
 
 def Main():
     proyecto = Docpol()
+    #st.title("Test Docpol")
     proyecto.save_Bitacora()
-
+    
 
 if __name__ == "__main__":
     Main()
