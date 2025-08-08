@@ -6,7 +6,8 @@ import shutil
 from pathlib import Path
 from model.tspan_replacer import replace_multiline_tspan_by_id
 
-def apply_svg_edits(svg_path, json_path="ediciones.json"):
+def apply_svg_edits(svg_path, json_path):
+    
     ediciones_path = Path(json_path)
 
     if not ediciones_path.exists():

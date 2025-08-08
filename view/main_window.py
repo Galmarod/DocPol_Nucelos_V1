@@ -3,21 +3,23 @@
 
 import subprocess
 from pathlib import Path
-from PySide6.QtWidgets import (
-    QMainWindow, QToolBar, QPushButton, QFileDialog
-)
+from PySide6.QtWidgets import QMainWindow, QToolBar, QPushButton, QFileDialog
 from PySide6.QtWebEngineWidgets import QWebEngineView
 from PySide6.QtWebEngineCore import QWebEnginePage
 from PySide6.QtCore import QUrl
 
 from controller.svg_edits import apply_svg_edits, restore_from_backup
+from common.gral import General
+
 
 class CustomPage(QWebEnginePage):
     def javaScriptConsoleMessage(self, level, message, lineNumber, sourceID):
         print(f"?? JS: {message}")
 
+
 class MainWindow(QMainWindow):
     def __init__(self, svg_path):
+        self.gral = General() 
         super().__init__()
         self.setWindowTitle("Preview Docpol v1.0.3")
         self.resize(620, 890)
@@ -68,7 +70,7 @@ class MainWindow(QMainWindow):
         self.browser.setZoomFactor(self.zoom_factor)
 
     def _aplicar(self):
-        if apply_svg_edits(self.svg_path):
+        if apply_svg_edits(self.svg_path, self.gral.get_file_edits("ediciones_utf8")):
             self.browser.reload()
 
     def _restaurar(self):
@@ -81,13 +83,61 @@ class MainWindow(QMainWindow):
             self, "Guardar como PDF", sugerido, "Archivos PDF (*.pdf)"
         )
         if archivo_pdf:
-            command = ["/Applications/Inkscape.app/Contents/MacOS/inkscape", "--pipe", f"--export-filename={archivo_pdf}"]
-            with open(self.svg_path, 'rb') as svg_content:
+            command = [
+                "/Applications/Inkscape.app/Contents/MacOS/inkscape",
+                "--pipe",
+                f"--export-filename={archivo_pdf}",
+            ]
+            with open(self.svg_path, "rb") as svg_content:
                 subprocess.run(command, input=svg_content.read(), check=True)
             print(f"? PDF exportado a: {archivo_pdf}")
         else:
             print("? Exportaci?n cancelada.")
 
     def inyectar_js(self):
-        js = """ // mismo JS que ya tienes... """
+        print("🚀 Inyectando JS para analizar tspans...")
+
+        js = """
+        (function() {
+            const svg = document.querySelector('svg');
+            if (!svg) return;
+
+            const tspans = svg.querySelectorAll("tspan");
+            const tspanHijos = [];
+            const tspanIndependientes = [];
+
+            tspans.forEach(tspan => {
+                const id = tspan.id || "(sin ID)";
+                const hijos = tspan.querySelectorAll("tspan");
+                let tipo = "🔹 INDEPENDIENTE";
+
+                if (hijos.length > 0) {
+                    const hijos_ids = Array.from(hijos).map(h => h.id || "(sin ID)");
+                    tipo = "🟣 PADRE de: " + hijos_ids.join(", ");
+                    hijos.forEach(h => tspanHijos.push(h));
+                } else if (
+                    tspan.parentElement &&
+                    tspan.parentElement.tagName.toLowerCase() === "tspan"
+                ) {
+                    const padre = tspan.parentElement;
+                    tipo = "🟢 HIJO de: " + (padre.id || "(sin ID)");
+                    tspanHijos.push(tspan);
+                } else {
+                    tspanIndependientes.push(tspan);
+                }
+
+                console.log(`[${id}] → ${tipo}`);
+            });
+
+            console.log(`✅ Se encontraron ${tspanHijos.length} tspans hijos.`);
+            tspanHijos.forEach(t => {
+                console.log(`📦 Hijo: ${t.id || "(sin ID)"}, texto: "${t.textContent.trim()}"`);
+            });
+
+            console.log(`✅ Se encontraron ${tspanIndependientes.length} tspans independientes.`);
+            tspanIndependientes.forEach(t => {
+                console.log(`📦 Independiente: ${t.id || "(sin ID)"}, texto: "${t.textContent.trim()}"`);
+            });
+        })()
+        """
         self.browser.page().runJavaScript(js)

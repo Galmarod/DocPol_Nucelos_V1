@@ -64,7 +64,7 @@ class Docpol:
 
     def remplace(self):
          app = QApplication([])
-         windows = MainWindow(self.gral.get_template_path("P2_1"))
+         windows = MainWindow(self.gral.get_template_path("P2_1.svg"))
          windows.show()
          sys.exit(app.exec())
         

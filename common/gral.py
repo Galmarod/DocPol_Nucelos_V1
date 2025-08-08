@@ -48,6 +48,13 @@ class General(object):
         tempFolder = os.path.join(self.main_path, 'temp')
         _temp      = os.path.join(tempFolder, name)
         return _temp
+ 
+    def get_file_edits(self, name):
+        if not name.endswith(".json"):
+            name += ".json"
+        tempFolder = os.path.join(self.main_path, 'edits')
+        _temp      = os.path.join(tempFolder, name)
+        return _temp
 
 
 
