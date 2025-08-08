@@ -21,7 +21,8 @@ from __init__ import Docpol
 def Main():
     proyecto = Docpol()
     #st.title("Test Docpol")
-    proyecto.save_Bitacora()
+    #proyecto.save_Bitacora()
+    proyecto.remplace()
     
 
 if __name__ == "__main__":

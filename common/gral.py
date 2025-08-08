@@ -28,14 +28,14 @@ class General(object):
     def get_template_path(self, name):
         if not name.endswith(".svg"):
             name += ".svg"
-        templateFolder = os.path.join(self.main_path, 'plantillas')
+        templateFolder = os.path.join(self.main_path, 'templates','svgFiles')
         _template      = os.path.join(templateFolder, name)
         return _template
 
     def get_image_path(self, name):
         if not name.endswith(".png"):
             name += ".png"
-        imageFolder = os.path.join(self.main_path, 'imagenes') 
+        imageFolder = os.path.join(self.main_path, 'assets') 
         _images     = os.path.join(imageFolder, name)
         return _images
     

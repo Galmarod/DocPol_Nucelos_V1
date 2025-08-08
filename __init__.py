@@ -17,12 +17,17 @@ DOCPOL_VERSION = __version__
 from lorem_text import lorem
 import pyfiglet
 import logging  
+import sys 
+from PySide6.QtWidgets import QApplication
+
 
 # Importar clases o funciones necesarias
 from common.gral import General
 from common.logs import Loger
 from controller.control import Control
 from controller.modifySvg import ModifySvg
+from view.main_window import MainWindow
+
 class Docpol:
     def __init__(self):
         # Inicializa Loger si es necesario
@@ -57,6 +62,12 @@ class Docpol:
         self.modifySvg.modify_svg_4_1("TEXTO FIGURA 1","image_prueba1","alineamiento_plot")
 
 
+    def remplace(self):
+         app = QApplication([])
+         windows = MainWindow(self.gral.get_template_path("P2_1"))
+         windows.show()
+         sys.exit(app.exec())
+        
 
 
 
