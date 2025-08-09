@@ -119,9 +119,9 @@ class MainWindow(QMainWindow):
             ]
             subprocess.run(command, check=True)
             print(f"📄 PDF exportado: {archivo_pdf}")
-
     def inyectar_js(self):
-        """Analiza tspans del SVG."""
+        print("🚀 Inyectando JS para analizar tspans...")
+
         js = """
         (function() {
             const svg = document.querySelector('svg');
@@ -134,18 +134,18 @@ class MainWindow(QMainWindow):
             tspans.forEach(tspan => {
                 const id = tspan.id || "(sin ID)";
                 const hijos = tspan.querySelectorAll("tspan");
-                let tipo = "INDEPENDIENTE";
+                let tipo = "🔹 INDEPENDIENTE";
 
                 if (hijos.length > 0) {
                     const hijos_ids = Array.from(hijos).map(h => h.id || "(sin ID)");
-                    tipo = "PADRE de: " + hijos_ids.join(", ");
+                    tipo = "🟣 PADRE de: " + hijos_ids.join(", ");
                     hijos.forEach(h => tspanHijos.push(h));
                 } else if (
                     tspan.parentElement &&
                     tspan.parentElement.tagName.toLowerCase() === "tspan"
                 ) {
                     const padre = tspan.parentElement;
-                    tipo = "HIJO de: " + (padre.id || "(sin ID)");
+                    tipo = "🟢 HIJO de: " + (padre.id || "(sin ID)");
                     tspanHijos.push(tspan);
                 } else {
                     tspanIndependientes.push(tspan);
@@ -154,11 +154,57 @@ class MainWindow(QMainWindow):
                 console.log(`[${id}] → ${tipo}`);
             });
 
-            console.log(`Hijos: ${tspanHijos.length}`);
-            console.log(`Independientes: ${tspanIndependientes.length}`);
+            console.log(`✅ Se encontraron ${tspanHijos.length} tspans hijos.`);
+            tspanHijos.forEach(t => {
+                console.log(`📦 Hijo: ${t.id || "(sin ID)"}, texto: "${t.textContent.trim()}"`);
+            });
+
+            console.log(`✅ Se encontraron ${tspanIndependientes.length} tspans independientes.`);
+            tspanIndependientes.forEach(t => {
+                console.log(`📦 Independiente: ${t.id || "(sin ID)"}, texto: "${t.textContent.trim()}"`);
+            });
         })()
         """
         self.browser.page().runJavaScript(js)
+    # def inyectar_js(self):
+    #     """Analiza tspans del SVG."""
+    #     js = """
+    #     (function() {
+    #         const svg = document.querySelector('svg');
+    #         if (!svg) return;
+    #
+    #         const tspans = svg.querySelectorAll("tspan");
+    #         const tspanHijos = [];
+    #         const tspanIndependientes = [];
+    #
+    #         tspans.forEach(tspan => {
+    #             const id = tspan.id || "(sin ID)";
+    #             const hijos = tspan.querySelectorAll("tspan");
+    #             let tipo = "INDEPENDIENTE";
+    #
+    #             if (hijos.length > 0) {
+    #                 const hijos_ids = Array.from(hijos).map(h => h.id || "(sin ID)");
+    #                 tipo = "PADRE de: " + hijos_ids.join(", ");
+    #                 hijos.forEach(h => tspanHijos.push(h));
+    #             } else if (
+    #                 tspan.parentElement &&
+    #                 tspan.parentElement.tagName.toLowerCase() === "tspan"
+    #             ) {
+    #                 const padre = tspan.parentElement;
+    #                 tipo = "HIJO de: " + (padre.id || "(sin ID)");
+    #                 tspanHijos.push(tspan);
+    #             } else {
+    #                 tspanIndependientes.push(tspan);
+    #             }
+    #
+    #             console.log(`[${id}] → ${tipo}`);
+    #         });
+    #
+    #         console.log(`Hijos: ${tspanHijos.length}`);
+    #         console.log(`Independientes: ${tspanIndependientes.length}`);
+    #     })()
+    #     """
+    #     self.browser.page().runJavaScript(js)
 
 
 if __name__ == "__main__":
