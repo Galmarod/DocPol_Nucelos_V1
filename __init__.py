@@ -44,7 +44,7 @@ class Docpol:
         #self.logger.info(f'      DOCPOL v.{DOCPOL_VERSION}')
         self.logger.info('=======================================')
         self.logger.info('=======================================')
-
+        
 
     def save_Bitacora(self):
         #_template =  self.gral.get_template_path("P2_1")

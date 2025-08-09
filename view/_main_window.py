@@ -3,13 +3,10 @@
 
 import subprocess
 from pathlib import Path
-from PySide6.QtWidgets import (
-    QMainWindow, QToolBar, QPushButton, QFileDialog, QLabel, QApplication, QVBoxLayout, QWidget
-)
-from PySide6.QtCore import Qt, QUrl
-from PySide6.QtGui import QPixmap
+from PySide6.QtWidgets import QMainWindow, QToolBar, QPushButton, QFileDialog
 from PySide6.QtWebEngineWidgets import QWebEngineView
 from PySide6.QtWebEngineCore import QWebEnginePage
+from PySide6.QtCore import QUrl
 
 from controller.svg_edits import apply_svg_edits, restore_from_backup
 from common.gral import General
@@ -17,45 +14,41 @@ from common.gral import General
 
 class CustomPage(QWebEnginePage):
     def javaScriptConsoleMessage(self, level, message, lineNumber, sourceID):
-        print(f"[JS] {message}")
+        print(f"?? JS: {message}")
 
 
 class MainWindow(QMainWindow):
     def __init__(self, svg_path):
+        self.gral = General() 
         super().__init__()
-        self.gral = General()
-        self.setWindowTitle("Vista PNG con análisis de tspans")
-        self.resize(700, 800)
+        self.setWindowTitle("Preview Docpol v1.0.3")
+        self.resize(620, 890)
 
         self.svg_path = Path(svg_path)
-        self.png_path = self.svg_path.with_suffix(".png")
-
-        # Layout principal
-        central_widget = QWidget()
-        self.layout = QVBoxLayout(central_widget)
-        self.setCentralWidget(central_widget)
-
-        # QLabel para mostrar PNG
-        self.image_label = QLabel("Cargando imagen...")
-        self.image_label.setAlignment(Qt.AlignCenter)
-        self.layout.addWidget(self.image_label)
-
-        # Toolbar
-        self.toolbar = QToolBar("Herramientas")
-        self.addToolBar(self.toolbar)
-        self._add_toolbar_buttons()
-
-        # QWebEngine invisible para correr JS
         self.browser = QWebEngineView()
         self.browser.setPage(CustomPage(self.browser))
-        self.browser.hide()  # No mostrar
+        self.zoom_factor = 0.75
+        self.browser.setZoomFactor(self.zoom_factor)
 
-        # Cargar SVG y correr análisis
         abs_path = self.svg_path.resolve()
         self.browser.load(QUrl.fromLocalFile(str(abs_path)))
-        self.browser.loadFinished.connect(self._procesar_svg)
+        self.browser.loadFinished.connect(self.inyectar_js)
+        self.setCentralWidget(self.browser)
+
+        self.toolbar = QToolBar("Herramientas")
+        self.addToolBar(self.toolbar)
+
+        self._add_toolbar_buttons()
 
     def _add_toolbar_buttons(self):
+        zoom_in_btn = QPushButton("+")
+        zoom_in_btn.clicked.connect(self.zoom_in)
+        self.toolbar.addWidget(zoom_in_btn)
+
+        zoom_out_btn = QPushButton("-")
+        zoom_out_btn.clicked.connect(self.zoom_out)
+        self.toolbar.addWidget(zoom_out_btn)
+
         aplicar_btn = QPushButton("Aplicar Ediciones")
         aplicar_btn.clicked.connect(self._aplicar)
         self.toolbar.addWidget(aplicar_btn)
@@ -68,42 +61,21 @@ class MainWindow(QMainWindow):
         exportar_pdf_btn.clicked.connect(self.exportar_pdf)
         self.toolbar.addWidget(exportar_pdf_btn)
 
-    def _procesar_svg(self):
-        """Cuando el SVG se carga, inyecta el JS y luego exporta a PNG."""
-        self.inyectar_js()
-        self._export_svg_to_png()
-        self._mostrar_png()
+    def zoom_in(self):
+        self.zoom_factor += 0.1
+        self.browser.setZoomFactor(self.zoom_factor)
 
-    def _export_svg_to_png(self):
-        fondo_color = "#ffffff"
-        command = [
-            "/Applications/Inkscape.app/Contents/MacOS/inkscape",
-            str(self.svg_path),
-            "--export-type=png",
-            f"--export-filename={self.png_path}",
-            "--export-dpi=300",
-            f"--export-background={fondo_color}",
-            "--export-background-opacity=1"
-        ]
-        subprocess.run(command, check=True)
-
-    def _mostrar_png(self):
-        if self.png_path.exists():
-            pixmap = QPixmap(str(self.png_path))
-            self.image_label.setPixmap(
-                pixmap.scaled(650, 650, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-            )
-            print(f"✅ PNG mostrado: {self.png_path}")
-        else:
-            print("❌ No se pudo mostrar el PNG")
+    def zoom_out(self):
+        self.zoom_factor = max(0.1, self.zoom_factor - 0.1)
+        self.browser.setZoomFactor(self.zoom_factor)
 
     def _aplicar(self):
         if apply_svg_edits(self.svg_path, self.gral.get_file_edits("ediciones_utf8")):
-            self._procesar_svg()
+            self.browser.reload()
 
     def _restaurar(self):
         if restore_from_backup(self.svg_path):
-            self._procesar_svg()
+            self.browser.reload()
 
     def exportar_pdf(self):
         sugerido = str(self.svg_path.with_suffix(".pdf"))
@@ -113,15 +85,18 @@ class MainWindow(QMainWindow):
         if archivo_pdf:
             command = [
                 "/Applications/Inkscape.app/Contents/MacOS/inkscape",
-                str(self.svg_path),
-                "--export-type=pdf",
+                "--pipe",
                 f"--export-filename={archivo_pdf}",
             ]
-            subprocess.run(command, check=True)
-            print(f"📄 PDF exportado: {archivo_pdf}")
+            with open(self.svg_path, "rb") as svg_content:
+                subprocess.run(command, input=svg_content.read(), check=True)
+            print(f"? PDF exportado a: {archivo_pdf}")
+        else:
+            print("? Exportaci?n cancelada.")
 
     def inyectar_js(self):
-        """Analiza tspans del SVG."""
+        print("🚀 Inyectando JS para analizar tspans...")
+
         js = """
         (function() {
             const svg = document.querySelector('svg');
@@ -134,18 +109,18 @@ class MainWindow(QMainWindow):
             tspans.forEach(tspan => {
                 const id = tspan.id || "(sin ID)";
                 const hijos = tspan.querySelectorAll("tspan");
-                let tipo = "INDEPENDIENTE";
+                let tipo = "🔹 INDEPENDIENTE";
 
                 if (hijos.length > 0) {
                     const hijos_ids = Array.from(hijos).map(h => h.id || "(sin ID)");
-                    tipo = "PADRE de: " + hijos_ids.join(", ");
+                    tipo = "🟣 PADRE de: " + hijos_ids.join(", ");
                     hijos.forEach(h => tspanHijos.push(h));
                 } else if (
                     tspan.parentElement &&
                     tspan.parentElement.tagName.toLowerCase() === "tspan"
                 ) {
                     const padre = tspan.parentElement;
-                    tipo = "HIJO de: " + (padre.id || "(sin ID)");
+                    tipo = "🟢 HIJO de: " + (padre.id || "(sin ID)");
                     tspanHijos.push(tspan);
                 } else {
                     tspanIndependientes.push(tspan);
@@ -154,16 +129,15 @@ class MainWindow(QMainWindow):
                 console.log(`[${id}] → ${tipo}`);
             });
 
-            console.log(`Hijos: ${tspanHijos.length}`);
-            console.log(`Independientes: ${tspanIndependientes.length}`);
+            console.log(`✅ Se encontraron ${tspanHijos.length} tspans hijos.`);
+            tspanHijos.forEach(t => {
+                console.log(`📦 Hijo: ${t.id || "(sin ID)"}, texto: "${t.textContent.trim()}"`);
+            });
+
+            console.log(`✅ Se encontraron ${tspanIndependientes.length} tspans independientes.`);
+            tspanIndependientes.forEach(t => {
+                console.log(`📦 Independiente: ${t.id || "(sin ID)"}, texto: "${t.textContent.trim()}"`);
+            });
         })()
         """
         self.browser.page().runJavaScript(js)
-
-
-if __name__ == "__main__":
-    import sys
-    app = QApplication(sys.argv)
-    win = MainWindow("test.svg")  # Cambia por tu SVG real
-    win.show()
-    sys.exit(app.exec())

@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import textwrap
-from lxml import etree as ET
+import lxml.etree as ET
+
 
 def replace_multiline_tspan_by_id(svg_path, reemplazos_por_id):
     tree = ET.parse(svg_path)
