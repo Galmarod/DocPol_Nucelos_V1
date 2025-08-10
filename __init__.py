@@ -18,7 +18,11 @@ from lorem_text import lorem
 import pyfiglet
 import logging  
 import sys 
+import uvicorn
+import queue
+import threading
 from PySide6.QtWidgets import QApplication
+from PySide6.QtCore import QTimer
 
 
 # Importar clases o funciones necesarias
@@ -27,14 +31,17 @@ from common.logs import Loger
 from controller.control import Control
 from controller.modifySvg import ModifySvg
 from view.main_window import MainWindow
+from api.api_server import APIServer
 
 class Docpol:
     def __init__(self):
         # Inicializa Loger si es necesario
         Loger()
+        self.queue = queue.Queue()
         self.gral = General() 
         self.control = Control()
-        self.modifySvg = ModifySvg() 
+        self.modifySvg = ModifySvg()
+        self.api = APIServer(queue=self.queue)
         # Configura el logger
         self.logger = logging.getLogger('bitacora')
         docpol = pyfiglet.figlet_format("DOCPOL")
@@ -61,13 +68,26 @@ class Docpol:
         self.modifySvg.modify_svg_3_3("TEXTO 1", "TEXTO TABLA 2", "alineamiento_plot" , "image_prueba1")
         self.modifySvg.modify_svg_4_1("TEXTO FIGURA 1","image_prueba1","alineamiento_plot")
 
+    def apitest(self):
+        threading.Thread(target=lambda: uvicorn.run(self.api.app, host="0.0.0.0", port=8000), daemon=True).start()
 
     def remplace(self):
-         app = QApplication([])
-         windows = MainWindow(self.gral.get_template_path("P2_1.svg"))
-         windows.show()
-         sys.exit(app.exec())
-        
+        app = QApplication([])
+        windows = MainWindow( self.gral.get_template_path("temp_input.svg"))
 
+        timer = QTimer()
+        timer.timeout.connect(lambda: self.check_queue(windows))
+        timer.start(500)
 
+        windows.show()
+        sys.exit(app.exec())
+
+    def check_queue(self, window):
+        try:
+            while True:
+                msg = self.queue.get_nowait()
+                if msg == "archivo_recibido":
+                    window.load_svg(self.gral.get_file_temp("temp_input.svg"))
+        except queue.Empty:
+            pass
 

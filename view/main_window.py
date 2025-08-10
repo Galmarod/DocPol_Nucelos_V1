@@ -50,6 +50,28 @@ class MainWindow(QMainWindow):
         self.browser.setPage(CustomPage(self.browser))
         self.browser.hide()  # No mostrar
 
+        if self.svg_path and self.svg_path.exists():
+            self._load_svg(self.svg_path)
+        else:
+            print("No se cargó SVG inicial.")
+
+    def _load_svg(self, path_svg):
+        self.svg_path = Path(path_svg)
+        self.png_path = self.svg_path.with_suffix(".png")
+        abs_path = self.svg_path.resolve()
+        self.browser.load(QUrl.fromLocalFile(str(abs_path)))
+        self.browser.loadFinished.connect(self._procesar_svg)
+        self.image_label.setText("Cargando imagen...")
+
+    def load_svg(self, path_svg):
+        """Método público para cargar o recargar un SVG dinámicamente."""
+        if Path(path_svg).exists():
+            self._load_svg(path_svg)
+        else:
+            self.image_label.setText("Archivo SVG no encontrado.")
+
+
+
         # Cargar SVG y correr análisis
         abs_path = self.svg_path.resolve()
         self.browser.load(QUrl.fromLocalFile(str(abs_path)))

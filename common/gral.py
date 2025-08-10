@@ -56,6 +56,13 @@ class General(object):
         _temp      = os.path.join(tempFolder, name)
         return _temp
 
+    def get_template_api(self, name):
+        if not name.endswith(".svg"):
+            name += ".svg"
+        tempFolder = os.path.join(self.main_path, 'templates', 'svgFiles')
+        _temp      = os.path.join(tempFolder, name)
+        return _temp
+
 
 
 
