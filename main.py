@@ -13,7 +13,7 @@ __date__       = "Oct-2024"
 
 
 import streamlit as st
-
+import threading
 from common.gral import General  
 from __init__ import Docpol  
 
@@ -22,6 +22,10 @@ def Main():
     proyecto = Docpol()
     #st.title("Test Docpol")
     #proyecto.save_Bitacora()
+    #proyecto.remplace()
+    #proyecto.apitest()
+    # Arrancar la API en un hilo (no bloqueante)
+    proyecto.apitest()
     proyecto.remplace()
     
 
