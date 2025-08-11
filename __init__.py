@@ -72,6 +72,7 @@ class Docpol:
         threading.Thread(target=lambda: uvicorn.run(self.api.app, host="0.0.0.0", port=8000), daemon=True).start()
 
     def remplace(self):
+        
         app = QApplication([])
         windows = MainWindow( self.gral.get_template_path("temp_input.svg"))
 

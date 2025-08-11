@@ -12,7 +12,8 @@ __status__     = "Development"
 __date__       = "Oct-2024"
 
 
-import logging  
+import logging
+import os
 from lxml import etree as ET
 import subprocess
 from PyPDF2 import PdfMerger
@@ -28,21 +29,31 @@ class Control(object):
         self.gral = General()
 
     def export_svg_to_pdf(self, svg_file, pdf_file):
-        # Ruta de Inkscape en Windows con barra invertida doblemente escapada o usar una raw string
-        command = ["/Applications/Inkscape.app/Contents/MacOS/inkscape", "--pipe", f"--export-filename={pdf_file}"]
-        #command = ["inkscape", "--pipe", f"--export-filename={self.gral.get_file_temp(pdf_file)}"]    
-        try:
-            # Abrir el archivo SVG como binario y pasar su contenido a Inkscape
-            with open(self.gral.get_file_temp(svg_file), 'rb') as svg_content:
-                subprocess.run(command, input=svg_content.read(), check=True)
-            self.logger.info("Archivo '{0}' exportado exitosamente a PDF como {1}."
-                             .format(svg_file, pdf_file))
-        except subprocess.CalledProcessError as e:
-            self.logger.error("Error al exportar '{0}' a PDF {1}."
-                              .format(svg_file, e))                 
-        except FileNotFoundError:
-            self.logger.error("El archivo {0} no se encontró."
-                              .format(svg_file))
+        fondo_color = "#ffffff"
+        command = [
+                "/Applications/Inkscape.app/Contents/MacOS/inkscape",
+                str(svg_file),
+                "--export-type=pdf",
+                f"--export-filename={pdf_file}",
+                "--export-dpi=300",
+                f"--export-background={fondo_color}",
+                "--export-background-opacity=1"
+            ]
+        subprocess.run(command, check=True)
+
+    
+    def export_svg_to_png(self, svg_file, png_file):
+        fondo_color = "#ffffff"
+        command = [
+                "/Applications/Inkscape.app/Contents/MacOS/inkscape",
+                str(svg_file),
+                "--export-type=png",
+                f"--export-filename={png_file}",
+                "--export-dpi=300",
+                f"--export-background={fondo_color}",
+                "--export-background-opacity=1"
+            ]
+        subprocess.run(command, check=True)
 
 
     def merge_pdfs(pdf_list, output_path):
