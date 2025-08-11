@@ -30,7 +30,7 @@ from common.gral import General
 from common.logs import Loger
 from controller.control import Control
 from controller.modifySvg import ModifySvg
-from view.main_window import MainWindow
+#from view.main_window import MainWindow
 from api.api_server import APIServer
 
 class Docpol:
@@ -68,9 +68,13 @@ class Docpol:
         self.modifySvg.modify_svg_3_3("TEXTO 1", "TEXTO TABLA 2", "alineamiento_plot" , "image_prueba1")
         self.modifySvg.modify_svg_4_1("TEXTO FIGURA 1","image_prueba1","alineamiento_plot")
 
+    """
     def apitest(self):
         threading.Thread(target=lambda: uvicorn.run(self.api.app, host="0.0.0.0", port=8000), daemon=True).start()
-
+    """
+    def apitest(self):
+        uvicorn.run(self.api.app, host="0.0.0.0", port=8000)
+    
     def remplace(self):
         
         app = QApplication([])

@@ -22,18 +22,18 @@ def apply_svg_edits(svg_path, json_path):
 
     # Leer reemplazos desde JSON
     with open(ediciones_path, "r", encoding="utf-8") as f:
-        replacements_by_id = json.load(f)
-
+        data = json.load(f)
+    replacements_by_id = data.get("ediciones",{})
     replace_multiline_tspan_by_id(svg_path, replacements_by_id)
     print("? Ediciones aplicadas.")
-    return True
+    #return True
 
-def restore_from_backup(svg_path):
+def restore_from_backup(svg_path: Path):
     backup_path = svg_path.with_suffix(".svg.bak")
     if backup_path.exists():
         shutil.copy(backup_path, svg_path)
-        print("? Archivo restaurado desde copia de seguridad.")
+        print("✅ Archivo restaurado desde copia de seguridad.")
         return True
     else:
-        print("? No se encontró una copia de seguridad.")
+        print("⚠️ No se encontró una copia de seguridad.")
         return False

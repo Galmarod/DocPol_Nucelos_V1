@@ -27,7 +27,7 @@ def Main():
     #proyecto.apitest()
     # Arrancar la API en un hilo (no bloqueante)
     proyecto.apitest()
-    proyecto.remplace()
+    #proyecto.remplace()
     
 
 if __name__ == "__main__":
