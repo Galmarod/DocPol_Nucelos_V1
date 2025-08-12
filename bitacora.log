@@ -45,3 +45,61 @@
 25-08-11 16:46:01 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
 25-08-11 16:46:01 - INFO  ::__init__.py              ::__init__       :: 53::=======================================                                                             
 25-08-11 16:46:05 - INFO  ::control.py               ::export_svg_to_png:: 86::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.png
+25-08-11 20:10:21 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
+25-08-11 20:10:21 - INFO  ::__init__.py              ::__init__       :: 49::=======================================                                                             
+25-08-11 20:10:21 - INFO  ::__init__.py              ::__init__       :: 50:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-08-11 20:10:21 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
+25-08-11 20:10:21 - INFO  ::__init__.py              ::__init__       :: 53::=======================================                                                             
+25-08-11 20:11:38 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
+25-08-11 20:11:38 - INFO  ::__init__.py              ::__init__       :: 49::=======================================                                                             
+25-08-11 20:11:38 - INFO  ::__init__.py              ::__init__       :: 50:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-08-11 20:11:38 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
+25-08-11 20:11:38 - INFO  ::__init__.py              ::__init__       :: 53::=======================================                                                             
+25-08-11 20:14:22 - INFO  ::control.py               ::export_svg_to_pdf:: 54::PDF exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.pdf
+25-08-11 20:14:22 - WARNING::control.py               ::export_svg_to_pdf:: 58::** Message: 20:14:22.921: Invalid glyph found, continuing...
+** Message: 20:14:22.921: Invalid glyph found, continuing...
+** Message: 20:14:22.921: Invalid glyph found, continuing...
+** Message: 20:14:22.921: Invalid glyph found, continuing...
+** Message: 20:14:22.922: Invalid glyph found, continuing...
+
+25-08-11 20:22:12 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
+25-08-11 20:22:12 - INFO  ::__init__.py              ::__init__       :: 49::=======================================                                                             
+25-08-11 20:22:12 - INFO  ::__init__.py              ::__init__       :: 50:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-08-11 20:22:12 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
+25-08-11 20:22:12 - INFO  ::__init__.py              ::__init__       :: 53::=======================================                                                             
+25-08-11 20:22:39 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
+25-08-11 20:22:39 - INFO  ::__init__.py              ::__init__       :: 49::=======================================                                                             
+25-08-11 20:22:39 - INFO  ::__init__.py              ::__init__       :: 50:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-08-11 20:22:39 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
+25-08-11 20:22:39 - INFO  ::__init__.py              ::__init__       :: 53::=======================================                                                             
+25-08-11 20:22:43 - INFO  ::control.py               ::export_svg_to_pdf:: 54::PDF exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.pdf
+25-08-11 20:22:43 - WARNING::control.py               ::export_svg_to_pdf:: 58::** Message: 20:22:43.798: Invalid glyph found, continuing...
+** Message: 20:22:43.798: Invalid glyph found, continuing...
+** Message: 20:22:43.798: Invalid glyph found, continuing...
+** Message: 20:22:43.798: Invalid glyph found, continuing...
+** Message: 20:22:43.798: Invalid glyph found, continuing...
+

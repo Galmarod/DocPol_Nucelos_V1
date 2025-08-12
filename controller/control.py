@@ -58,7 +58,7 @@ class Control(object):
                 self.logger.warning(result.stderr)
         except subprocess.CalledProcessError as e:
             self.logger.error(f"Error al exportar PDF: {e.stderr}")
-        raise
+            raise
 
     
     def export_svg_to_png(self, svg_file, png_file):
