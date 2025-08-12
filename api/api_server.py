@@ -18,10 +18,15 @@ import shutil
 import json
 import os
 import uuid
+import io
+import zipfile
+import os
 from common.gral import General
 from controller.control import Control
 from controller.svg_edits import apply_svg_edits, restore_from_backup
+from model.tspan_replacer import analizar_tspans
 import asyncio
+from fastapi.responses import StreamingResponse, JSONResponse
 
 class APIServer:
     def __init__(self, queue=None):
@@ -64,8 +69,16 @@ class APIServer:
                 print("👤 Datos usuario:", name_user_data)
                     
                 png_path = os.path.join(os.path.dirname(svg_path), f"{filename}.png")
-                await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)
-
+                txt_path = os.path.join(os.path.dirname(svg_path), f"{filename}_TspanAlisis.txt")
+                
+                await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)                
+                await asyncio.to_thread(analizar_tspans, Path(svg_path), txt_path) 
+                # Crear ZIP en memoria
+                zip_buffer = io.BytesIO()
+                with zipfile.ZipFile(zip_buffer, "w") as zipf:
+                    zipf.write(png_path, arcname=f"{filename}.png")
+                    zipf.write(txt_path, arcname=f"{filename}.txt")
+                zip_buffer.seek(0)
                 
                 # Si usas la cola
                 if self.queue:
@@ -85,8 +98,13 @@ class APIServer:
                     pass
                 except OSError as e:
                     print(f"?? No se pudo eliminar carpeta temporal: {e}")
-                return FileResponse(png_path, media_type="image/png", filename=f"{filename}.png")
-
+                #return FileResponse(png_path, media_type="image/png", filename=f"{filename}.png")
+                # Devolver ZIP como respuesta
+                return StreamingResponse(
+                    zip_buffer,
+                    media_type="application/zip",
+                    headers={"Content-Disposition": f"attachment; filename={filename}.zip"}
+                )
             except Exception as e:
                 return JSONResponse({"error": str(e)}, status_code=500)
         
@@ -122,11 +140,14 @@ class APIServer:
                 
                 svg_path = self.gral.save_files_user("uploads",username,filename,f"{filename}.svg")
                 png_path = os.path.join(os.path.dirname(svg_path), f"{filename}_edit.png")
+ 
                 
-                
-                
+
                 await asyncio.to_thread(apply_svg_edits, Path(svg_path), final_json_path)
                 await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)
+                
+                #Solution bugTemporal exportPDF, after change
+                await asyncio.to_thread(restore_from_backup, Path(svg_path))
 
                 if self.queue:
                     self.queue.put("archivo_recibido")
