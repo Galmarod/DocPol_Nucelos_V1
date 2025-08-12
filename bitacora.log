@@ -440,3 +440,16 @@
 25-08-12 00:21:06 - INFO  ::control.py               ::export_svg_to_pdf:: 54::PDF exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.pdf
 25-08-12 00:22:16 - INFO  ::control.py               ::export_svg_to_png:: 85::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep_edit.png
 25-08-12 00:22:33 - INFO  ::control.py               ::export_svg_to_pdf:: 54::PDF exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.pdf
+25-08-12 00:23:13 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
+25-08-12 00:23:13 - INFO  ::__init__.py              ::__init__       :: 49::=======================================                                                             
+25-08-12 00:23:13 - INFO  ::__init__.py              ::__init__       :: 50:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-08-12 00:23:13 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
+25-08-12 00:23:13 - INFO  ::__init__.py              ::__init__       :: 53::=======================================                                                             
+25-08-12 00:23:48 - INFO  ::control.py               ::export_svg_to_png:: 85::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep_restore.png
+25-08-12 00:24:14 - INFO  ::control.py               ::export_svg_to_png:: 85::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep_edit.png
