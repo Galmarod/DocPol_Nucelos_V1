@@ -12,7 +12,9 @@ __status__     = "Development"
 __date__       = "Oct-2024"
 
 
-import logging  
+import logging
+import shutil
+import os
 from lxml import etree as ET
 import subprocess
 from PyPDF2 import PdfMerger
@@ -26,23 +28,68 @@ class Control(object):
         Loger()
         self.logger = logging.getLogger('bitacora')
         self.gral = General()
-
+        self.pathInkscape = "/Applications/Inkscape.app/Contents/MacOS/inkscape" #MacOs
+        #self.pathInkscape = "/usr/bin/inkscape" #Docker
     def export_svg_to_pdf(self, svg_file, pdf_file):
-        # Ruta de Inkscape en Windows con barra invertida doblemente escapada o usar una raw string
-        command = ["/Applications/Inkscape.app/Contents/MacOS/inkscape", "--pipe", f"--export-filename={pdf_file}"]
-        #command = ["inkscape", "--pipe", f"--export-filename={self.gral.get_file_temp(pdf_file)}"]    
+        if not os.path.isfile(self.pathInkscape):
+            raise FileNotFoundError(f"Inkscape no encontrado en {self.pathInkscape}")
+
+
+        if not os.path.isfile(svg_file):
+            raise FileNotFoundError(f"SVG no encontrado: {svg_file}")
+
+        fondo_color = "#ffffff"
+        command = [
+            self.pathInkscape,
+            str(svg_file),
+            "--export-type=pdf",
+            f"--export-filename={pdf_file}",
+            "--export-dpi=300",
+            f"--export-background={fondo_color}",
+            "--export-background-opacity=1"
+        ]
+
         try:
-            # Abrir el archivo SVG como binario y pasar su contenido a Inkscape
-            with open(self.gral.get_file_temp(svg_file), 'rb') as svg_content:
-                subprocess.run(command, input=svg_content.read(), check=True)
-            self.logger.info("Archivo '{0}' exportado exitosamente a PDF como {1}."
-                             .format(svg_file, pdf_file))
+            result = subprocess.run(command, capture_output=True, text=True, check=True)
+            self.logger.info(f"PDF exportado: {pdf_file}")
+            if result.stdout:
+                self.logger.debug(result.stdout)
+            if result.stderr:
+                self.logger.warning(result.stderr)
         except subprocess.CalledProcessError as e:
-            self.logger.error("Error al exportar '{0}' a PDF {1}."
-                              .format(svg_file, e))                 
-        except FileNotFoundError:
-            self.logger.error("El archivo {0} no se encontró."
-                              .format(svg_file))
+            self.logger.error(f"Error al exportar PDF: {e.stderr}")
+            raise
+
+    
+    def export_svg_to_png(self, svg_file, png_file):
+        print("docker")
+        if not os.path.isfile(self.pathInkscape):
+            raise FileNotFoundError(f"Inkscape no encontrado en {self.pathInkscape}")        
+
+        if not os.path.isfile(svg_file):
+            raise FileNotFoundError(f"SVG no encontrado: {svg_file}")
+
+        fondo_color = "#ffffff"
+        command = [
+            self.pathInkscape,
+            str(svg_file),
+            "--export-type=png",
+            f"--export-filename={png_file}",
+            "--export-dpi=300",
+            f"--export-background={fondo_color}",
+            "--export-background-opacity=1"
+        ]
+
+        try:
+            result = subprocess.run(command, capture_output=True, text=True, check=True)
+            self.logger.info(f"PNG exportado: {png_file}")
+            if result.stdout:
+                self.logger.debug(result.stdout)
+            if result.stderr:
+                self.logger.warning(result.stderr)
+        except subprocess.CalledProcessError as e:
+            self.logger.error(f"Error al exportar PNG: {e.stderr}")
+            raise
 
 
     def merge_pdfs(pdf_list, output_path):

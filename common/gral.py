@@ -63,6 +63,15 @@ class General(object):
         _temp      = os.path.join(tempFolder, name)
         return _temp
 
+    
+    def save_files_user(self, folder, UserFolder,FileFolder,name):
+        tempFolder = os.path.join(self.main_path, folder, UserFolder, FileFolder)
+        os.makedirs(tempFolder, exist_ok=True)
+        _temp      = os.path.join(tempFolder, name)
+        return _temp
+    
+ 
+
 
 
 
