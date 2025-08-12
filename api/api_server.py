@@ -141,13 +141,13 @@ class APIServer:
                 svg_path = self.gral.save_files_user("uploads",username,filename,f"{filename}.svg")
                 png_path = os.path.join(os.path.dirname(svg_path), f"{filename}_edit.png")
  
-                
+                #Solution bugTemporal exportPDF, after change
+                await asyncio.to_thread(restore_from_backup, Path(svg_path))
 
                 await asyncio.to_thread(apply_svg_edits, Path(svg_path), final_json_path)
                 await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)
                 
-                #Solution bugTemporal exportPDF, after change
-                await asyncio.to_thread(restore_from_backup, Path(svg_path))
+
 
                 if self.queue:
                     self.queue.put("archivo_recibido")
