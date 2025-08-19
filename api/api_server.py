@@ -41,34 +41,8 @@ class APIServer:
         @self.app.post("/docpolSaveFiles")
         async def save_files(svg_file: UploadFile = File(...), json_file: UploadFile = File(...)):
             try:
-                # Guardar JSON temporalmente
-                temp_json_path = self.gral.save_files_user("temp",uuid.uuid4().hex,"tempFile", f"temp_{uuid.uuid4().hex}.json")
-                with open(temp_json_path, "wb") as f:
-                    shutil.copyfileobj(json_file.file, f)
-
-                # Leer JSON
-                with open(temp_json_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-
-                # Obtener datos de nameUser
-                name_user_data = data.get("User", {})
-                username = name_user_data.get("nameUser", None)
+                svg_path, filename, png_path, temp_json_path, final_json_path, name_file_user = self.gral.save_file_api(json_file,svg_file)
                 
-                filename = os.path.splitext(svg_file.filename)[0]
-                final_json_path = self.gral.save_files_user("uploads",username, filename,f"{username}_{filename}.json") 
-                # Renombrar JSON
-                os.rename(temp_json_path, final_json_path)
-               
-                svg_path = self.gral.save_files_user("uploads",username,filename ,svg_file.filename)
-                with open(svg_path, "wb") as f:
-                    shutil.copyfileobj(svg_file.file, f)
-
-                # Extraer ediciones para procesar
-                ediciones = data.get("ediciones", {})
-                print("📄 Ediciones:", ediciones)
-                print("👤 Datos usuario:", name_user_data)
-                    
-                png_path = os.path.join(os.path.dirname(svg_path), f"{filename}.png")
                 txt_path = os.path.join(os.path.dirname(svg_path), f"{filename}_TspanAlisis.txt")
                 
                 await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)                
@@ -111,36 +85,9 @@ class APIServer:
         @self.app.post("/docpolEditSvg")
         async def edit_files(json_file: UploadFile = File(...)):
             try:
-                # Guardar JSON temporalmente
-                temp_json_path = self.gral.save_files_user("temp",uuid.uuid4().hex,"tempFile", f"temp_{uuid.uuid4().hex}.json")
-                with open(temp_json_path, "wb") as f:
-                    shutil.copyfileobj(json_file.file, f)
 
-                # Leer JSON
-                with open(temp_json_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    print(data)
+                svg_path, filename, png_path, temp_json_path, final_json_path, name_file_user = self.gral.save_file_api(json_file)
 
-                # Obtener datos de nameUser
-                name_user_data = data.get("User", {})
-                username = name_user_data.get("nameUser", None)
-                name_file_user = data.get("Svginformation",{})
-                file = name_file_user.get("nameFileSvg",None)
-                filename = os.path.splitext(file)[0]
-
-                
-                final_json_path = self.gral.save_files_user("uploads",username, filename,f"{username}_{filename}_ediciones.json") 
-                # Renombrar JSON
-                os.rename(temp_json_path, final_json_path)
-               
-                # Extraer ediciones para procesar
-                ediciones = data.get("ediciones", {})
-                print("📄 Ediciones:", ediciones)
-                print("👤 Datos usuario:", name_user_data)
-                
-                svg_path = self.gral.save_files_user("uploads",username,filename,f"{filename}.svg")
-                png_path = os.path.join(os.path.dirname(svg_path), f"{filename}_edit.png")
- 
                 #Solution bugTemporal exportPDF, after change
                 await asyncio.to_thread(restore_from_backup, Path(svg_path))
 
@@ -173,36 +120,9 @@ class APIServer:
         @self.app.post("/docpolRestoreSvg")
         async def restore_files(json_file: UploadFile = File(...)):
             try:
-                # Guardar JSON temporalmente
-                temp_json_path = self.gral.save_files_user("temp",uuid.uuid4().hex,"tempFile", f"temp_{uuid.uuid4().hex}.json")
-                with open(temp_json_path, "wb") as f:
-                    shutil.copyfileobj(json_file.file, f)
-
-                # Leer JSON
-                with open(temp_json_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    print(data)
-
-                # Obtener datos de nameUser
-                name_user_data = data.get("User", {})
-                username = name_user_data.get("nameUser", None)
-                name_file_user = data.get("Svginformation",{})
-                file = name_file_user.get("nameFileSvg",None)
-                filename = os.path.splitext(file)[0]
-
-                
-                final_json_path = self.gral.save_files_user("uploads",username, filename,f"{username}_{filename}_restore.json") 
-                # Renombrar JSON
-                os.rename(temp_json_path, final_json_path)
-                
-                # Extraer ediciones para procesar
-                print("👤 Datos usuario:", name_user_data)
-               
-                restore = name_file_user.get("restore",None)
-
-                svg_path = self.gral.save_files_user("uploads",username,filename,f"{filename}.svg")
-                png_path = os.path.join(os.path.dirname(svg_path), f"{filename}_restore.png")
-                
+                svg_path, filename, png_path, temp_json_path, final_json_path, data = self.gral.save_file_api(json_file)  
+                name_file_user = data.get("Svginformation",{})            
+                restore = name_file_user.get("restore",None)            
                 print(restore)
                 if restore == 1:
                     await asyncio.to_thread(restore_from_backup, Path(svg_path))
@@ -233,33 +153,11 @@ class APIServer:
         async def export_pdf(json_file: UploadFile = File(...)):
             try:
                 # Guardar JSON temporalmente
-                temp_json_path = self.gral.save_files_user("temp",uuid.uuid4().hex,"tempFile", f"temp_{uuid.uuid4().hex}.json")
-                with open(temp_json_path, "wb") as f:
-                    shutil.copyfileobj(json_file.file, f)
-
-                # Leer JSON
-                with open(temp_json_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    print(data)
-
-                # Obtener datos de nameUser
-                name_user_data = data.get("User", {})
-                username = name_user_data.get("nameUser", None)
-                name_file_user = data.get("Svginformation",{})
-                file = name_file_user.get("nameFileSvg",None)
-                filename = os.path.splitext(file)[0]
-
-                        
-                final_json_path = self.gral.save_files_user("uploads",username, filename,f"{username}_{filename}_restore.json") 
-                # Renombrar JSON
-                os.rename(temp_json_path, final_json_path)
-                
-                # Extraer ediciones para procesar
-                print("👤 Datos usuario:", name_user_data)
-               
+                svg_path, filename, png_path, temp_json_path, final_json_path, data = self.gral.save_file_api(json_file)  
+                name_file_user = data.get("Svginformation",{})  
+            
                 exportPDF = name_file_user.get("exportPDF",None)
 
-                svg_path = self.gral.save_files_user("uploads",username,filename,f"{filename}.svg")
                 pdf_path = os.path.join(os.path.dirname(svg_path), f"{filename}.pdf")
                 
                 if exportPDF == 1:
