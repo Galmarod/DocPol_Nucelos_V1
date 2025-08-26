@@ -109,8 +109,6 @@ class General(object):
            # Renombrar JSON
            os.rename(temp_json_path, final_json_path)
 
-
-
         # Extraer ediciones para procesar
         ediciones = data.get("ediciones", {})
         print("📄 Ediciones:", ediciones)
