@@ -28,8 +28,8 @@ class Control(object):
         Loger()
         self.logger = logging.getLogger('bitacora')
         self.gral = General()
-        #self.pathInkscape = "/Applications/Inkscape.app/Contents/MacOS/inkscape" #MacOs
-        self.pathInkscape = "/usr/bin/inkscape" #Docker
+        self.pathInkscape = "/Applications/Inkscape.app/Contents/MacOS/inkscape" #MacOs
+        #self.pathInkscape = "/usr/bin/inkscape" #Docker
     def export_svg_to_pdf(self, svg_file, pdf_file):
         if not os.path.isfile(self.pathInkscape):
             raise FileNotFoundError(f"Inkscape no encontrado en {self.pathInkscape}")

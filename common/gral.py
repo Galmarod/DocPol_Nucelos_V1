@@ -11,17 +11,23 @@ __email__      = "javimenba.developer@gmail.com"
 __status__     = "Development"
 __date__       = "Oct-2024"
 
+import logging
 import os
 import uuid
 import shutil
 import json
 from fastapi import UploadFile
 
+from common.logs import Loger
+
 class General(object):
     def __init__(self):
+        Loger()
         self.main_path = ""
         self.compiled = False
         self.set_main_path()
+        self.logger = logging.getLogger('bitacora')
+        
 
     def set_main_path(self):
         separador = os.path.sep
@@ -82,23 +88,20 @@ class General(object):
         temp_json_path = self.save_files_user("temp",uuid.uuid4().hex,"tempFile", f"temp_{uuid.uuid4().hex}.json")
         with open(temp_json_path, "wb") as f:
             shutil.copyfileobj(json_file.file, f)
-        # Leer JSON
         with open(temp_json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        # Obtener datos de nameUser
         name_user_data = data.get("User", {})
         username = name_user_data.get("nameUser", None)
-               
+
         if svg_file is not None:
            filename = os.path.splitext(svg_file.filename)[0]
            final_json_path = self.save_files_user("uploads",username, filename,f"{username}_{filename}.json") 
            svg_path = self.save_files_user("uploads",username,filename ,svg_file.filename)
-           # Renombrar JSON
            os.rename(temp_json_path, final_json_path)
            with open(svg_path, "wb") as f:
                 shutil.copyfileobj(svg_file.file, f)
+           self.logger.info(f'Datos recibidos del usuario: {username}')
         if svg_file is None:
-           # Obtener datos de nameUser
            name_user_data = data.get("User", {})
            username = name_user_data.get("nameUser", None)
            name_file_user = data.get("Svginformation",{})
@@ -106,14 +109,11 @@ class General(object):
            filename = os.path.splitext(file)[0]
            final_json_path = self.save_files_user("uploads",username, filename,f"{username}_{filename}_ediciones.json")
            svg_path = self.save_files_user("uploads",username,filename,f"{filename}.svg")
-           # Renombrar JSON
            os.rename(temp_json_path, final_json_path)
 
-        # Extraer ediciones para procesar
         ediciones = data.get("ediciones", {})
-        print("📄 Ediciones:", ediciones)
-        print("👤 Datos usuario:", name_user_data)
-            
+        self.logger.info(f'📄 Ediciones: {ediciones}')
+        self.logger.info(f'👤 Datos usuario: {name_user_data}')
         png_path = os.path.join(os.path.dirname(svg_path), f"{filename}.png")
 
         return svg_path, filename, png_path, temp_json_path, final_json_path, data
