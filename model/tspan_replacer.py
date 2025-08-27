@@ -44,7 +44,7 @@ def replace_multiline_tspan_by_id(svg_path, reemplazos_por_id):
                 print(f"?? Eliminando <tspan id='{hijo.attrib.get('id', '(sin ID)')}'>")
                 text_node.remove(hijo)
 
-            # Dividir el nuevo texto en l’neas
+            # Dividir el nuevo texto en l?neas
             lineas = textwrap.wrap(nuevo_texto, width=95, break_long_words=True, replace_whitespace=False)
 
 
@@ -66,7 +66,7 @@ def replace_multiline_tspan_by_id(svg_path, reemplazos_por_id):
                 nuevo.set("y", y)
                 nuevo.set("id", f"{tspan_id}")
                 nuevo.text = linea
-
+                #a       
                 # Aplicar estilos heredados
                 if style_original:
                     nuevo.set("style", style_original)

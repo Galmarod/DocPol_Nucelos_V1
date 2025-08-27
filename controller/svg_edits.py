@@ -11,15 +11,13 @@ def apply_svg_edits(svg_path, json_path):
 
     if not ediciones_path.exists():
         print("? No se encontró el archivo ediciones.json.")
-        return  # No retorna True/False, simplemente termina
+        return 
 
-    # Crear copia de seguridad si no existe
     backup_path = svg_path.with_suffix(".svg.bak")
     if not backup_path.exists():
         shutil.copy(svg_path, backup_path)
         print(f"?? Copia de seguridad creada: {backup_path.name}")
 
-    # Leer y validar JSON
     with open(ediciones_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
