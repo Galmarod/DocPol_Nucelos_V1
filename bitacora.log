@@ -1,13 +1,42 @@
-25-08-26 00:47:09 - INFO  ::__init__.py              ::__init__       :: 47::=======================================                                                             
-25-08-26 00:47:09 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
-25-08-26 00:47:09 - INFO  ::__init__.py              ::__init__       :: 49:: ____   ___   ____ ____   ___  _     
+25-08-29 00:16:58 - INFO  ::__init__.py              ::__init__       :: 47::=======================================                                                             
+25-08-29 00:16:58 - INFO  ::__init__.py              ::__init__       :: 48::=======================================                                                             
+25-08-29 00:16:58 - INFO  ::__init__.py              ::__init__       :: 49:: ____   ___   ____ ____   ___  _     
 |  _ \ / _ \ / ___|  _ \ / _ \| |    
 | | | | | | | |   | |_) | | | | |    
 | |_| | |_| | |___|  __/| |_| | |___ 
 |____/ \___/ \____|_|    \___/|_____|
                                      
  v.1.0.1
-25-08-26 00:47:09 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
-25-08-26 00:47:09 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
-25-08-26 00:47:22 - INFO  ::gral.py                  ::save_file_api  ::103::Datos recibidos del usuario: javimenba                                                              
-25-08-26 00:47:23 - INFO  ::control.py               ::export_svg_to_png:: 85::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.png
+25-08-29 00:16:58 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-08-29 00:16:58 - INFO  ::__init__.py              ::__init__       :: 52::=======================================                                                             
+25-08-29 00:17:52 - INFO  ::gral.py                  ::save_file_api  ::103::Datos recibidos del usuario: javimenba                                                              
+25-08-29 00:17:52 - INFO  ::gral.py                  ::save_file_api  ::115::📄 Ediciones: {}                                                                                     
+25-08-29 00:17:52 - INFO  ::gral.py                  ::save_file_api  ::116::👤 Datos usuario: {'nameUser': 'javimenba', 'premium': 'False'}                                      
+25-08-29 00:17:54 - INFO  ::control.py               ::export_svg_to_png:: 85::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.png
+25-08-29 00:17:54 - INFO  ::analyze_svg.py           ::run_analyze_svg::349::✅ Análisis optimizado completado.                                                                   
+25-08-29 00:17:54 - INFO  ::analyze_svg.py           ::run_analyze_svg::350::📊 Solo elementos óptimos para edición en analisis_optimizado.json                                   
+25-08-29 00:17:54 - INFO  ::analyze_svg.py           ::run_analyze_svg::356::
+📊 RESUMEN:                                                                                         
+25-08-29 00:17:54 - INFO  ::analyze_svg.py           ::run_analyze_svg::357::   Elementos texto editables: 6                                                                     
+25-08-29 00:17:54 - INFO  ::analyze_svg.py           ::run_analyze_svg::358::   Placeholders de imagen: 0                                                                        
+25-08-29 00:24:36 - INFO  ::__init__.py              ::__init__       :: 45::=======================================                                                             
+25-08-29 00:24:36 - INFO  ::__init__.py              ::__init__       :: 46::=======================================                                                             
+25-08-29 00:24:36 - INFO  ::__init__.py              ::__init__       :: 47:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-08-29 00:24:36 - INFO  ::__init__.py              ::__init__       :: 49::=======================================                                                             
+25-08-29 00:24:36 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-08-29 00:24:56 - INFO  ::gral.py                  ::save_file_api  ::103::Datos recibidos del usuario: javimenba                                                              
+25-08-29 00:24:56 - INFO  ::gral.py                  ::save_file_api  ::115::📄 Ediciones: {}                                                                                     
+25-08-29 00:24:56 - INFO  ::gral.py                  ::save_file_api  ::116::👤 Datos usuario: {'nameUser': 'javimenba', 'premium': 'False'}                                      
+25-08-29 00:24:57 - INFO  ::control.py               ::export_svg_to_png:: 85::PNG exportado: /Users/javier.developer/DocPol_Nucelos_V1/uploads/javimenba/certificadoSep/certificadoSep.png
+25-08-29 00:24:57 - INFO  ::analyze_svg.py           ::run_analyze_svg::349::✅ Análisis optimizado completado.                                                                   
+25-08-29 00:24:57 - INFO  ::analyze_svg.py           ::run_analyze_svg::350::📊 Solo elementos óptimos para edición en analisis_optimizado.json                                   
+25-08-29 00:24:57 - INFO  ::analyze_svg.py           ::run_analyze_svg::356::
+📊 RESUMEN:                                                                                         
+25-08-29 00:24:57 - INFO  ::analyze_svg.py           ::run_analyze_svg::357::   Elementos texto editables: 6                                                                     
+25-08-29 00:24:57 - INFO  ::analyze_svg.py           ::run_analyze_svg::358::   Placeholders de imagen: 0                                                                        

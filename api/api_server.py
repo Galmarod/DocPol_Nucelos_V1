@@ -25,8 +25,10 @@ from pathlib import Path
 
 from common.gral import General
 from controller.control import Control
-from controller.svg_edits import apply_svg_edits, restore_from_backup
-from model.tspan_replacer import analizar_tspans
+#from controller.svg_edits import apply_svg_edits, restore_from_backup
+from controller.svg_edits import SvgEdits
+
+from model.analyze_svg import AnalyzeSvg
 
 
 class APIServer:
@@ -34,7 +36,9 @@ class APIServer:
         self.app = FastAPI()
         self.queue = queue
         self.gral = General()
-        self.control = Control()        
+        self.control = Control()
+        self.analyzesvg = AnalyzeSvg()
+        self.svgedits = SvgEdits()
         self._docpol_api()
 
     def _docpol_api(self):
@@ -42,14 +46,15 @@ class APIServer:
         async def save_files(svg_file: UploadFile = File(...), json_file: UploadFile = File(...)):
             try:
                 svg_path, filename, png_path, temp_json_path, final_json_path, name_file_user = self.gral.save_file_api(json_file,svg_file)
-                txt_path = os.path.join(os.path.dirname(svg_path), f"{filename}_TspanAlisis.txt")
+                json_path = os.path.join(os.path.dirname(svg_path), f"{filename}_TspanAlisis.json")
                 
-                await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)                
-                await asyncio.to_thread(analizar_tspans, Path(svg_path), txt_path) 
+
+                await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path) 
+                await asyncio.to_thread(self.analyzesvg.run_analyze_svg, svg_path, json_path)
                 zip_buffer = io.BytesIO()
                 with zipfile.ZipFile(zip_buffer, "w") as zipf:
                     zipf.write(png_path, arcname=f"{filename}.png")
-                    zipf.write(txt_path, arcname=f"{filename}.txt")
+                    zipf.write(json_path, arcname=f"{filename}.json")
                 zip_buffer.seek(0)
                 
                 # Si usas la cola
@@ -80,8 +85,7 @@ class APIServer:
         async def edit_files(json_file: UploadFile = File(...)):
             try:
                 svg_path, filename, png_path, temp_json_path, final_json_path, name_file_user = self.gral.save_file_api(json_file)
-                await asyncio.to_thread(restore_from_backup, Path(svg_path))
-                await asyncio.to_thread(apply_svg_edits, Path(svg_path), final_json_path)
+                await asyncio.to_thread(self.svgedits.runSvgEdits, final_json_path, svg_path)
                 await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)                
                 if self.queue:
                     self.queue.put("archivo_recibido")
@@ -109,7 +113,7 @@ class APIServer:
                 restore = name_file_user.get("restore",None)   
 
                 if restore == 1:
-                    await asyncio.to_thread(restore_from_backup, Path(svg_path))
+                    await asyncio.to_thread(self.svgedits.restore_from_backup, Path(svg_path))
                     await asyncio.to_thread(self.control.export_svg_to_png, svg_path, png_path)
 
                 if self.queue:
