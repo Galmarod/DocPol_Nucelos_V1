@@ -2,6 +2,11 @@
 
 ```bash
 📁 Docpol_Nucleos_V1/
+│
+├── 📁 api/                  ← APIs de sistemas
+│   ├── __init__.py
+│   └── api_server.py
+│
 ├── 📁 assets/               ← Recursos visuales (logos, imágenes, etc.)
 │   ├── alineamiento_plot.png
 │   ├── image_prueba1.png
@@ -20,7 +25,7 @@
 │   └── ediciones_utf8.json
 │
 ├── 📁 model/                ← Módulos para procesamiento de datos/SVG
-│   └── tspan_replacer.py
+│   └── analyze_svg.py
 │
 ├── 📁 temp/                 ← Archivos temporales generados (PDF/SVG)
 │   ├── P1-temp.svg
@@ -31,6 +36,9 @@
 │   ├── PDF/
 │   ├── svgFiles/
 │   └── texts/
+│
+├── 📁 uploads/              ← Archivos de los usuarios
+│   
 │
 ├── 📁 test/                 ← Scripts de prueba
 │   └── test_path.py
@@ -45,4 +53,48 @@
 └── DocPol_Nucelos_V1.py    ← Script principal (puede migrar a main.py)
 ```
 
-holq
+## Guía de Instalación y Configuración
+
+### Prerrequisitos 
+
+* Python 3.8 o superior
+* pip (gestor de paquetes de Python)
+* Git (para clonar el repositorio)
+
+## Instalación
+1.- Clonar repositorio
+```bash
+git clone git@github.com:Galmarod/DocPol_Nucelos_V1.git
+cd Docpol_Nucleos_V1
+git checkout /dev/javimenba
+```
+
+2.- Configurar entorno virtual
+```bash
+# Crear entorno virtual
+python -m venv .venv
+
+# Activar entorno virtual
+# Linux/macOS:
+source .venv/bin/activate
+# Linux/macOS con Fish
+# source .venv/bin/activate.fish 
+# Windows:
+# .venv\Scripts\activate
+```
+
+3.- Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
+
+4.- Verificar Instalación
+```bash
+python -c "import sys; print(f'Python version: {sys.version}')"
+pip list
+```
+
+## Uso del proyecto
+```bash
+python main.py
+```
