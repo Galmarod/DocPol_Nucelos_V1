@@ -49,6 +49,7 @@
 ├── bitacora.log            ← Archivo de registro
 ├── main.py                 ← Punto de entrada principal del programa
 ├── readme.md               ← Documentación del proyecto
+├── Dockerfile              ← Instrucciones para crear una imagen de Docker
 ├── requirements.txt        ← Lista de dependencias
 └── DocPol_Nucelos_V1.py    ← Script principal (puede migrar a main.py)
 ```
@@ -98,3 +99,9 @@ pip list
 ```bash
 python main.py
 ```
+## Docker run
+```bash
+ docker build -t mi-worker .
+ docker run -p 8000:8000 -v $(pwd)/test_data:/data mi-worker 
+``` 
+
