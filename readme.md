@@ -46,12 +46,12 @@
 ├── 📁 view/                 ← Interfaz gráfica (GUI)
 │   └── main_window.py
 │
-├── bitacora.log            ← Archivo de registro
-├── main.py                 ← Punto de entrada principal del programa
-├── readme.md               ← Documentación del proyecto
-├── Dockerfile              ← Instrucciones para crear una imagen de Docker
-├── requirements.txt        ← Lista de dependencias
-└── DocPol_Nucelos_V1.py    ← Script principal (puede migrar a main.py)
+├── bitacora.log             ← Archivo de registro
+├── main.py                  ← Punto de entrada principal del programa
+├── readme.md                ← Documentación del proyecto
+├── Dockerfile               ← Instrucciones para crear una imagen de Docker
+├── requirements.txt         ← Lista de dependencias
+└── DocPol_Nucelos_V1.py     ← Script principal (puede migrar a main.py)
 ```
 
 ## Guía de Instalación y Configuración
