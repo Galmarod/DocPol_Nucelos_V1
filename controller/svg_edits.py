@@ -24,7 +24,7 @@ def apply_svg_edits(svg_path, json_path):
     replacements_by_id = data.get("ediciones") or {}
     if not isinstance(replacements_by_id, dict):
         raise ValueError(
-            f"Formato inv?lido en {json_path}: 'ediciones' debe ser un objeto/diccionario"
+            f"Formato invalido en {json_path}: 'ediciones' debe ser un objeto/diccionario"
         )
 
     replace_multiline_tspan_by_id(svg_path, replacements_by_id)
