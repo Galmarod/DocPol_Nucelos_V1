@@ -1,0 +1,10 @@
+{
+    "ediciones": {
+        "tspan7": "Alineamiento de Oligonucleotidos",
+        "tspan8": "El gráfico muestra el resultado del alineamiento de los oligonucleótidos seleccionados contra la secuencia de referencia. La región sombreada en rosa indica la zona óptima para el diseño de los oligonucleótidos, donde se observa una alta conservación de la secuencia y características favorables para la amplificación.",
+        "tspan9": "Se puede observar que la región seleccionada (posiciones 150-250) presenta condiciones ideales para el diseño de oligonucleótidos, con un contenido GC equilibrado y mínima formación de estructuras secundarias. Los picos en el gráfico indican zonas de alta especificidad para el diseño de primers.",
+        "tspan10": "3. Características del diagnóstico por IA",
+        "tspan11": " Mejores oligonucleótidos y sondas.",
+        "tspan12": "Tabla 1."
+    }
+}
