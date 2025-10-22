@@ -30,6 +30,7 @@ from common.logs import Loger
 from controller.control import Control
 from controller.modifySvg import ModifySvg
 #from view.main_window import MainWindow
+from view.main_window import MainWindow
 from api.api_server import APIServer
 
 class Docpol:
@@ -75,15 +76,26 @@ class Docpol:
         uvicorn.run(self.api.app, host="0.0.0.0", port=8000)
     
     def remplace(self):
+        # Add a splash screen
+        from view.splash_screen import SplashScreen
         
         app = QApplication([])
-        windows = MainWindow( self.gral.get_template_path("temp_input.svg"))
-
+        
+        # Show splash screen
+        splash = SplashScreen()
+        splash.show()
+        
+        # Create main window
+        windows = MainWindow(self.gral.get_template_path("temp_input.svg"))
+        
+        # Setup queue check timer
         timer = QTimer()
         timer.timeout.connect(lambda: self.check_queue(windows))
         timer.start(500)
-
-        windows.show()
+        
+        # When splash screen closes, show main window
+        splash.fade_anim.finished.connect(windows.show)
+        
         sys.exit(app.exec())
 
     def check_queue(self, window):
