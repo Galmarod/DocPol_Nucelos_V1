@@ -1,0 +1,407 @@
+
+25-10-22 07:39:59 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 07:39:59 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 07:39:59 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 07:39:59 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 07:39:59 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 07:39:59 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 07:40:00 - INFO  ::GPDF.py                  ::register_fonts :: 74::Fuentes registradas correctamente.                                                                  
+25-10-22 07:40:00 - INFO  ::GPDF.py                  ::create_pdf     ::151::Generando PDF desde /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg con datos /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/contenido.json
+25-10-22 07:40:00 - ERROR ::GPDF.py                  ::create_pdf     ::199::❌ Error al generar PDF: [Errno 2] No such file or directory: '/Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/contenido.json'
+25-10-22 07:41:31 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 07:41:31 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 07:41:31 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 07:41:31 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 07:41:31 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 07:41:31 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 07:41:31 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 07:41:31 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Black; fuente cuerpo: Montserrat-Black                                
+25-10-22 07:41:31 - INFO  ::GPDF2.py                 ::create_pdf     ::183::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 07:41:32 - INFO  ::GPDF2.py                 ::create_pdf     ::253::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 07:41:32 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:10:34 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:10:34 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:10:34 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:10:34 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:10:34 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:10:34 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:10:34 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:10:34 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:10:34 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:10:35 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:10:35 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:12:52 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:12:52 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:12:52 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:12:52 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:12:52 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:12:52 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:12:53 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:12:53 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:12:53 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:12:54 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:12:54 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:17:12 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:17:12 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:17:12 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:17:12 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:17:12 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:17:12 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:17:13 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:17:13 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:17:13 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:17:13 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:17:13 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:18:53 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:18:53 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:18:53 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:18:53 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:18:53 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:18:53 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:18:53 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:18:53 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:18:53 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:18:54 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:18:54 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:40:00 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:40:00 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:40:00 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:40:00 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:40:00 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:40:00 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:40:00 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:40:00 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:40:00 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:40:01 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:40:01 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:43:00 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:43:00 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:43:00 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:43:00 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:43:00 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:43:00 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:43:00 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:43:00 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:43:00 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:43:01 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:43:01 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:46:22 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:46:22 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:46:22 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:46:22 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:46:22 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:46:22 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:46:23 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:46:23 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:46:23 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:46:23 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:46:23 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:46:45 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:46:45 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:46:45 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:46:45 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:46:45 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:46:45 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:46:46 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:46:46 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:46:46 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:46:47 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:46:47 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:00 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:47:00 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:47:00 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:47:00 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:47:00 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:47:00 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:47:01 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:47:01 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:47:01 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:01 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:01 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:16 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:47:16 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:47:16 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:47:16 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:47:16 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:47:16 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:47:17 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:47:17 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:47:17 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:17 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:17 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:51 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:47:51 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:47:51 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:47:51 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:47:51 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:47:51 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:47:52 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:47:52 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:47:52 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:52 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:47:52 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:10 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:48:10 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:48:10 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:48:10 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:48:10 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:48:10 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:48:10 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:48:10 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:48:10 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:11 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:11 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:21 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:48:21 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:48:21 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:48:21 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:48:21 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:48:21 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:48:22 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:48:22 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:48:22 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:22 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:22 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:37 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:48:37 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:48:37 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:48:37 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:48:37 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:48:37 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:48:37 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:48:37 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:48:37 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:38 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:38 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:51 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:48:51 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:48:51 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:48:51 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:48:51 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:48:51 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:48:52 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:48:52 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:48:52 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:53 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:48:53 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:49:05 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:49:05 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:49:05 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:49:05 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:49:05 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:49:05 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:49:06 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:49:06 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:49:06 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:49:07 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:49:07 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:49:30 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:49:30 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:49:30 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:49:30 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:49:30 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:49:30 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:49:30 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:49:30 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:49:30 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:49:31 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:49:31 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:50:27 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:50:27 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:50:27 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:50:27 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:50:27 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:50:27 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:50:28 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:50:28 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:50:28 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:50:29 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:50:29 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:51:19 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:51:19 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:51:19 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:51:19 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:51:19 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:51:19 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:51:19 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:51:19 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:51:19 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:51:20 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:51:20 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:51:58 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:51:58 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:51:58 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:51:58 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:51:58 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:51:58 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:51:58 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:51:58 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:51:58 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:51:59 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:51:59 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:52:39 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:52:39 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:52:39 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:52:39 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:52:39 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:52:39 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:52:39 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:52:39 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:52:39 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:52:40 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:52:40 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:53:24 - INFO  ::__init__.py              ::__init__       :: 50::=======================================                                                             
+25-10-22 08:53:24 - INFO  ::__init__.py              ::__init__       :: 51::=======================================                                                             
+25-10-22 08:53:24 - INFO  ::__init__.py              ::__init__       :: 52:: ____   ___   ____ ____   ___  _     
+|  _ \ / _ \ / ___|  _ \ / _ \| |    
+| | | | | | | |   | |_) | | | | |    
+| |_| | |_| | |___|  __/| |_| | |___ 
+|____/ \___/ \____|_|    \___/|_____|
+                                     
+ v.1.0.1
+25-10-22 08:53:24 - INFO  ::__init__.py              ::__init__       :: 53::      DEMO - MODO BACKEND                                                                           
+25-10-22 08:53:24 - INFO  ::__init__.py              ::__init__       :: 54::=======================================                                                             
+25-10-22 08:53:24 - INFO  ::__init__.py              ::__init__       :: 55::=======================================                                                             
+25-10-22 08:53:24 - INFO  ::GPDF2.py                 ::register_fonts :: 75::Proceso de registro de fuentes finalizado.                                                          
+25-10-22 08:53:24 - INFO  ::GPDF2.py                 ::__init__       :: 53::Fuente título: SairaCondensed-Regular; fuente cuerpo: Montserrat-Regular                            
+25-10-22 08:53:24 - INFO  ::GPDF2.py                 ::create_pdf     ::200::Generando PDF desde plantilla: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/svgFiles/K0.svg; JSON: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/templates/texts/contenido.json; Salida: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:53:25 - INFO  ::GPDF2.py                 ::create_pdf     ::270::✅ PDF generado correctamente: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf
+25-10-22 08:53:25 - INFO  ::__init__.py              ::demo_pdf       ::139::PDF generado correctamente en: /Users/galmarod/Documents/PROYECTOS/RevelCode/DocPol/Demo-oct25/temp/informe_demo.pdf

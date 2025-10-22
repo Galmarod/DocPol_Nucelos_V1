@@ -1,5 +1,0 @@
-Yuce, M., Filiztekin, E., & Ozkaya, K. (2021 Jan 15). COVID-19 diagnosis -A review of current methods.. Biosensors & bioelectronics. S0956-5663(20)30740-5
-Gusev, E., Sarapultsev, A., Solomatina, L., & Chereshnev, V. (2022 Feb 2). SARS-CoV-2-Specific Immune Response and the Pathogenesis of COVID-19.. International journal of molecular sciences. ijms23031716
-Wang, M., Zhao, R., Gao, L., Gao, X., Wang, D., & Cao, J. (2020). SARS-CoV-2: Structure, Biology, and Structure-Based Therapeutics Development.. Frontiers in cellular and infection microbiology. 10.3389/fcimb.2020.587269
-Chilamakuri, R., & Agarwal, S. (2021 Jan 21). COVID-19: Characteristics and Therapeutics.. Cells. cells10020206
-Bai, C., Zhong, Q., & Gao, G. (2022 Feb). Overview of SARS-CoV-2 genome-encoded proteins.. Science China. Life sciences. 10.1007/s11427-021-1964-4

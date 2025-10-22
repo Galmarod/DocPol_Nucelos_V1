@@ -1,0 +1,27 @@
+{
+  "titulo": "Informe Consolidado - Demo",
+  "introduccion": "Este informe presenta un análisis integral de los datos operativos y ambientales registrados en una estación de servicio durante el mes de octubre de 2025. A partir de cuatro bases de datos en distintos formatos —CSV, XLSX, SQL y JSON— se generaron gráficas que permiten visualizar los principales indicadores del control volumétrico, desempeño del personal, comportamiento de las ventas según formas de pago y mediciones de emisiones atmosféricas. \n\nEl objetivo de este reporte es demostrar la capacidad de integración de diferentes fuentes de datos en un sistema automatizado de monitoreo y análisis, capaz de ofrecer información relevante para la toma de decisiones, auditorías operativas y cumplimiento ambiental.",
+  "secciones": [
+    {
+      "titulo": "Gráfica 1 — CSV",
+      "texto": "La primera base de datos, en formato **CSV**, corresponde al registro diario de _entradas y salidas de combustible_ en los tanques de almacenamiento y su venta a través de los despachadores. Se graficaron los **litros totales vendidos por día** en una _gráfica de dispersión_ donde el eje **X** representa las fechas del mes y el eje **Y** los litros vendidos. \n\nLa gráfica muestra una tendencia estable de ventas con ligeras fluctuaciones diarias, destacando un **pico máximo de 14,300 litros vendidos el 12/10/2025**, lo cual podría asociarse a un incremento en la demanda o una recarga programada de tanques.",
+      "imagen": "graf_base1_csv.svg"
+    },
+    {
+      "titulo": "Gráfica 2 — XLSX",
+      "texto": "Esta gráfica proviene de un archivo **XLSX** que simula el _registro de personal por turno_ y su desempeño en ventas. Cada empleado aparece representado en el eje **X**, mientras que el eje **Y** indica los **litros vendidos durante el mes**. Las barras se agrupan por persona y se dividen en tres colores: **azul (Turno 1)**, **naranja (Turno 2)** y **verde (Turno 3)**. \n\nEl análisis revela que **Juan Pérez**, del **Turno 2**, alcanzó el volumen más alto de ventas, seguido de **Rosa Ramírez** en el **Turno 1** y **Luis Ortega** en el **Turno 3**. Este comportamiento sugiere una posible relación entre la rotación del personal y el rendimiento operativo por turno.",
+      "imagen": "graf_base2_xlsx.svg"
+    },
+    {
+      "titulo": "Gráfica 3 — SQL",
+      "texto": "A partir de la base de datos **SQL** denominada *formas_pago.db*, se generó una gráfica de barras que representa la **distribución mensual por forma de pago y tipo de producto**. Las barras corresponden a los productos **Premium**, **Magna** y **Diésel**, subdivididas por color según la forma de pago: **verde (efectivo)**, **amarillo (débito)** y **azul (crédito)**. \n\nLos resultados evidencian que la **Magna** presenta el mayor volumen de ventas en **efectivo**, la **Premium** predomina en **pagos con tarjeta de débito**, mientras que el **Diésel** registra su máximo en **pagos con tarjeta de crédito**. Este patrón sugiere una segmentación de clientes según tipo de combustible y método de pago, información útil para estrategias de promociones o convenios corporativos con distribuidoras o empresas con flotillas de carros que requieran pagos con tiempo extendido de cobro.",
+      "imagen": "graf_base3_sql.svg"
+    },
+    {
+      "titulo": "Gráfica 4 — JSON",
+      "texto": "La cuarta base, en formato **JSON**, contiene datos ambientales de _medición de vapores y gases de combustión_ recolectados diariamente. En la gráfica se comparan los niveles de **Benceno (ppm)** y **Monóxido de Carbono – CO (ppm)** mediante líneas de tendencia. El **Benceno** se muestra en negro (línea continua) y el **CO** en rojo (línea punteada), cada uno con su respectivo eje **Y**. \n\nEl rango de concentración del **Benceno** varía entre _0.1 y 0.2 ppm_, mientras que el **CO** oscila entre _1.4 y 2.0 ppm_. Ambos valores se mantienen dentro de los límites permisibles, indicando una operación ambientalmente controlada. Esta representación facilita el seguimiento diario de contaminantes y la identificación de desviaciones potenciales en los sistemas de ventilación o combustión.",
+      "imagen": "graf_base4_json.svg"
+    }
+  ]
+}
+

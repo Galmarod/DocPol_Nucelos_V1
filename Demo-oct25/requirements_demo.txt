@@ -1,0 +1,35 @@
+# Requirements para DocPol - Versión Demo Backend
+# Esta es una versión simplificada sin API ni GUI
+
+# === CORE: Sistema de Logging y Utilidades ===
+lorem-text>=2.1.0
+pyfiglet>=0.8.0
+
+# === XML/SVG Processing ===
+lxml>=4.9.0
+
+# === PDF Processing ===
+PyPDF2>=3.0.0
+
+# === Notas sobre dependencias ELIMINADAS ===
+# Las siguientes dependencias NO son necesarias para la versión demo:
+#
+# API Server (eliminado):
+# - fastapi
+# - uvicorn
+# - python-multipart
+#
+# GUI (eliminado):
+# - PySide6
+# - streamlit
+#
+# Otras (eliminadas):
+# - Pillow (si no se usan imágenes)
+# - python-jose (autenticación API)
+# - passlib (autenticación API)
+
+# === Dependencias del Sistema ===
+# IMPORTANTE: Inkscape debe estar instalado en el sistema
+# - MacOS: /Applications/Inkscape.app/Contents/MacOS/inkscape
+# - Linux: /usr/bin/inkscape
+# - Windows: C:\Program Files\Inkscape\bin\inkscape.exe
