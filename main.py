@@ -23,11 +23,10 @@ def Main():
     proyecto = Docpol()
     #st.title("Test Docpol")
     #proyecto.save_Bitacora()
-    #proyecto.remplace()
-    #proyecto.apitest()
+    
     # Arrancar la API en un hilo (no bloqueante)
-    proyecto.apitest()
-    #proyecto.remplace()
+    # proyecto.apitest()  # This will start the API
+    proyecto.remplace()  # This will start the GUI interface
     
 
 if __name__ == "__main__":
